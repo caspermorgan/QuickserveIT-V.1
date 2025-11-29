@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Documents - QuickServe IT Portfolio</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="header-container">
+            <a href="../index.html" class="logo">
+                <span class="logo-text">⚡ QuickServe IT</span>
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Portfolio</a></li>
+                    <li class="nav-item"><a href="../index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="langSwitch" class="btn btn--secondary btn--sm">हिंदी</button>
+                <button id="themeToggle" class="btn btn--secondary btn--sm">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== BREADCRUMB ===== -->
+    <section style="padding-top: 100px; padding-bottom: 20px;">
+        <div class="container">
+            <nav style="font-size: 14px; color: var(--text-muted);">
+                <a href="../index.html" style="color: var(--gold-primary);">Home</a> 
+                <span> / </span>
+                <a href="index.html" style="color: var(--gold-primary);">Portfolio</a> 
+                <span> / </span>
+                <span style="color: var(--text-primary);">School Documents</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- ===== PORTFOLIO NAVIGATION TABS ===== -->
+    <section style="padding: 40px 20px; background: rgba(199, 154, 27, 0.05);">
+        <div class="container">
+            <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 40px;">
+                <a href="index.html" class="btn btn--secondary" style="text-decoration: none;">All Portfolio</a>
+                <a href="video-work.html" class="btn btn--secondary" style="text-decoration: none;">Video Work</a>
+                <a href="typing-samples.html" class="btn btn--secondary" style="text-decoration: none;">Typing Samples</a>
+                <a href="school-documents.html" class="btn btn--primary" style="text-decoration: none;">School Documents</a>
+                <a href="before-after.html" class="btn btn--secondary" style="text-decoration: none;">Before & After</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section style="padding: 60px 20px; text-align: center;">
+        <div class="container">
+            <h1 style="font-size: 48px; color: var(--gold-bright); margin-bottom: 16px;">🎓 School Documents</h1>
+            <p style="font-size: 18px; color: var(--text-muted); max-width: 700px; margin: 0 auto;">
+                Professional timetables, attendance sheets, exam papers, and certificates. Complete school documentation solutions with professional formatting.
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== SCHOOL DOCUMENT SAMPLES ===== -->
+    <section style="padding: 60px 20px;">
+        <div class="container">
+            <h2 style="font-size: 32px; color: var(--gold-bright); margin-bottom: 32px;">School Documents Portfolio</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px;">
+                <!-- Example 1 -->
+                <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; padding: 28px;">
+                    <h3 style="color: var(--text-primary); font-size: 20px; margin-bottom: 12px;">📅 Class Timetable</h3>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 8px;"><strong>Type:</strong> Weekly class schedule</p>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 8px;"><strong>Details:</strong> 6 days × 6 periods</p>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 8px;"><strong>Format:</strong> Professional table with colors</p>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 16px;"><strong>Status:</strong> Print-ready</p>
+                    <p style="color: var(--text-muted); font-size: 13px; line-height: 1.6;">Professional formatting with clear subject labels, teacher names, break times. Optimized for classroom display and printing.</p>
+                </div>
+
+                <!-- Example 2 -->
+                <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; padding: 28px;">
+                    <h3 style="color: var(--text-primary); font-size: 20px; margin-bottom: 12px;">✅ Attendance Register</h3>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 8px;"><strong>Type:</strong> Monthly attendance sheet</p>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 8px;"><strong>Details:</strong> 50 students × 30 days</p>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 8px;"><strong>Format:</strong> Automated calculations</p>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 16px;"><strong>Status:</strong> Ready to use</p>
+                    <p style="color: var(--text-muted); font-size: 13px; line-height: 1.6;">Attendance sheet with roll numbers, names, daily columns, and automated percentage calculations. Professional & reusable.</p>
+                </div>
+
+                <!-- Example 3 -->
+                <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; padding: 28px;">
+                    <h3 style="color: var(--text-primary); font-size: 20px; margin-bottom: 12px;">📜 Exam Paper</h3>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 8px;"><strong>Type:</strong> Question paper</p>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 8px;"><strong>Details:</strong> 4 pages, 40 questions</p>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 8px;"><strong>Format:</strong> Professional layout</p>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 16px;"><strong>Status:</strong> Print-ready</p>
+                    <p style="color: var(--text-muted); font-size: 13px; line-height: 1.6;">Professional question paper with header, instructions, sections, marks distribution. Ready for photocopying.</p>
+                </div>
+
+                <!-- Example 4 -->
+                <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; padding: 28px;">
+                    <h3 style="color: var(--text-primary); font-size: 20px; margin-bottom: 12px;">🏆 Certificate</h3>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 8px;"><strong>Type:</strong> Achievement certificate</p>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 8px;"><strong>Details:</strong> Customizable template</p>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 8px;"><strong>Format:</strong> A4 size, colored</p>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 16px;"><strong>Status:</strong> Ready to print</p>
+                    <p style="color: var(--text-muted); font-size: 13px; line-height: 1.6;">Professional certificates with borders, signatures, seal space. Perfect for awards, achievements, and recognition.</p>
+                </div>
+
+                <!-- Example 5 -->
+                <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; padding: 28px;">
+                    <h3 style="color: var(--text-primary); font-size: 20px; margin-bottom: 12px;">📊 Result Sheet</h3>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 8px;"><strong>Type:</strong> Semester results</p>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 8px;"><strong>Details:</strong> 60 students, 8 subjects</p>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 8px;"><strong>Format:</strong> Automated calculations</p>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 16px;"><strong>Status:</strong> Complete</p>
+                    <p style="color: var(--text-muted); font-size: 13px; line-height: 1.6;">Result sheet with automatic grade calculation, GPA, merit ranking. Professional and accurate data entry.</p>
+                </div>
+
+                <!-- Example 6 -->
+                <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; padding: 28px;">
+                    <h3 style="color: var(--text-primary); font-size: 20px; margin-bottom: 12px;">💾 Monthly Package</h3>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 8px;"><strong>Type:</strong> Complete school support</p>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 8px;"><strong>Details:</strong> All documents included</p>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 8px;"><strong>Format:</strong> Unlimited revisions</p>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 16px;"><strong>Status:</strong> Active for 12 months</p>
+                    <p style="color: var(--text-muted); font-size: 13px; line-height: 1.6;">Monthly support package with unlimited documents, priority support, and professional management.</p>
+                </div>
+            </div>
+
+            <!-- Why Schools Trust Us -->
+            <div style="background: rgba(199, 154, 27, 0.05); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; padding: 32px; margin-top: 60px;">
+                <h3 style="color: var(--gold-bright); font-size: 24px; margin-bottom: 24px;">Why Schools Choose Us</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px;">
+                    <div>
+                        <h4 style="color: var(--text-primary); margin-bottom: 8px;">✓ Time-Saving</h4>
+                        <p style="color: var(--text-muted); font-size: 14px;">Hours of work completed in minutes with professional quality.</p>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--text-primary); margin-bottom: 8px;">✓ Error-Free</h4>
+                        <p style="color: var(--text-muted); font-size: 14px;">Data accuracy check, no spelling mistakes, clean formatting.</p>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--text-primary); margin-bottom: 8px;">✓ Reusable Templates</h4>
+                        <p style="color: var(--text-muted); font-size: 14px;">Customizable templates you can use every year.</p>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--text-primary); margin-bottom: 8px;">✓ Affordable Pricing</h4>
+                        <p style="color: var(--text-muted); font-size: 14px;">Bulk discounts available for schools with monthly support.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA SECTION ===== -->
+    <section style="padding: 60px 20px; background: rgba(199, 154, 27, 0.05); text-align: center;">
+        <div class="container">
+            <h2 style="font-size: 36px; color: var(--gold-bright); margin-bottom: 16px;">Let Us Handle Your School Documentation</h2>
+            <p style="font-size: 16px; color: var(--text-muted); margin-bottom: 32px;">Focus on education, we'll handle the paperwork.</p>
+            <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                <a href="../index.html#contact" class="btn btn--primary btn--lg" style="text-decoration: none;">
+                    Get Quote
+                </a>
+                <a href="index.html" class="btn btn--secondary btn--lg" style="text-decoration: none;">
+                    View More Portfolio
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer style="background: rgba(17, 17, 17, 0.8); border-top: 1px solid rgba(199, 154, 27, 0.2); padding: 40px 20px; text-align: center; margin-top: 60px;">
+        <div class="container">
+            <p style="color: var(--text-muted); font-size: 14px;">© 2024 QuickServe IT. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../app.js"></script>
+</body>
+</html>
