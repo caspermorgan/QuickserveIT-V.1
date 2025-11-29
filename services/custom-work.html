@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom & Bulk Projects - QuickServe IT</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="header-container">
+            <a href="../index.html" class="logo">
+                <span class="logo-text">⚡ QuickServe IT</span>
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="../index.html#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="../index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="langSwitch" class="btn btn--secondary btn--sm">हिंदी</button>
+                <button id="themeToggle" class="btn btn--secondary btn--sm">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== BREADCRUMB ===== -->
+    <section style="padding-top: 100px; padding-bottom: 20px;">
+        <div class="container">
+            <nav style="font-size: 14px; color: var(--text-muted);">
+                <a href="../index.html" style="color: var(--gold-primary);">Home</a> 
+                <span> / </span>
+                <a href="index.html" style="color: var(--gold-primary);">Services</a> 
+                <span> / </span>
+                <span style="color: var(--text-primary);">Custom & Bulk Projects</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section style="padding: 60px 20px; text-align: center;">
+        <div class="container">
+            <h1 style="font-size: 48px; color: var(--gold-bright); margin-bottom: 16px;">✨ Custom & Bulk Projects</h1>
+            <p style="font-size: 18px; color: var(--text-muted); max-width: 700px; margin: 0 auto;">
+                Specialized projects, bulk orders, mixed services, and unique digital solutions. Perfect for schools, creators, and businesses with specific needs.
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <section style="padding: 60px 20px;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
+                <!-- LEFT: Service Details -->
+                <div>
+                    <h2 style="font-size: 32px; color: var(--gold-bright); margin-bottom: 24px;">What We Offer</h2>
+                    
+                    <div style="background: rgba(199, 154, 27, 0.1); border-left: 4px solid var(--gold-bright); padding: 20px; margin-bottom: 24px; border-radius: 8px;">
+                        <h3 style="color: var(--text-primary); margin-bottom: 12px;">Bulk Document Orders</h3>
+                        <ul style="color: var(--text-muted); line-height: 1.8; list-style: none; padding: 0;">
+                            <li>✓ Large quantity typing projects</li>
+                            <li>✓ 10-20% discounts for bulk orders (5000+ words)</li>
+                            <li>✓ Consistent formatting across all documents</li>
+                            <li>✓ Fast delivery without quality compromise</li>
+                        </ul>
+                    </div>
+
+                    <div style="background: rgba(199, 154, 27, 0.1); border-left: 4px solid var(--gold-bright); padding: 20px; margin-bottom: 24px; border-radius: 8px;">
+                        <h3 style="color: var(--text-primary); margin-bottom: 12px;">Mixed Service Projects</h3>
+                        <ul style="color: var(--text-muted); line-height: 1.8; list-style: none; padding: 0;">
+                            <li>✓ Typing + formatting + PDF conversion</li>
+                            <li>✓ Documents + video editing</li>
+                            <li>✓ School data + certificates + timetables</li>
+                            <li>✓ Customized package pricing</li>
+                        </ul>
+                    </div>
+
+                    <div style="background: rgba(199, 154, 27, 0.1); border-left: 4px solid var(--gold-bright); padding: 20px; margin-bottom: 24px; border-radius: 8px;">
+                        <h3 style="color: var(--text-primary); margin-bottom: 12px;">Monthly Support Packages</h3>
+                        <ul style="color: var(--text-muted); line-height: 1.8; list-style: none; padding: 0;">
+                            <li>✓ School Monthly Support Package</li>
+                            <li>✓ Creator Monthly Subscription</li>
+                            <li>✓ Unlimited work within package scope</li>
+                            <li>✓ Priority support and quick turnaround</li>
+                        </ul>
+                    </div>
+
+                    <div style="background: rgba(199, 154, 27, 0.1); border-left: 4px solid var(--gold-bright); padding: 20px; margin-bottom: 24px; border-radius: 8px;">
+                        <h3 style="color: var(--text-primary); margin-bottom: 12px;">Enterprise Solutions</h3>
+                        <ul style="color: var(--text-muted); line-height: 1.8; list-style: none; padding: 0;">
+                            <li>✓ Custom digital project solutions</li>
+                            <li>✓ Large-scale operations support</li>
+                            <li>✓ Dedicated account management</li>
+                            <li>✓ Custom pricing and contracts</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- RIGHT: Pricing & CTA -->
+                <div>
+                    <div style="background: linear-gradient(135deg, rgba(199, 154, 27, 0.15), rgba(212, 175, 55, 0.08)); border: 2px solid rgba(199, 154, 27, 0.4); border-radius: 16px; padding: 32px; position: sticky; top: 100px;">
+                        <h3 style="color: var(--gold-bright); font-size: 28px; margin-bottom: 24px;">Pricing Options</h3>
+                        
+                        <div style="background: rgba(11, 11, 11, 0.5); padding: 16px; border-radius: 8px; margin-bottom: 20px;">
+                            <h4 style="color: var(--text-primary); margin-bottom: 8px; font-size: 16px;">Bulk Typing Discount</h4>
+                            <p style="color: var(--gold-bright); font-size: 20px; font-weight: bold; margin: 0;">10-20% OFF</p>
+                            <p style="color: var(--text-muted); font-size: 12px; margin: 8px 0 0 0;">Orders 5000+ words</p>
+                        </div>
+
+                        <div style="background: rgba(11, 11, 11, 0.5); padding: 16px; border-radius: 8px; margin-bottom: 20px;">
+                            <h4 style="color: var(--text-primary); margin-bottom: 8px; font-size: 16px;">Mixed Project Package</h4>
+                            <p style="color: var(--gold-bright); font-size: 20px; font-weight: bold; margin: 0;">Custom Quote</p>
+                            <p style="color: var(--text-muted); font-size: 12px; margin: 8px 0 0 0;">Email/WhatsApp for details</p>
+                        </div>
+
+                        <div style="background: rgba(11, 11, 11, 0.5); padding: 16px; border-radius: 8px; margin-bottom: 20px;">
+                            <h4 style="color: var(--text-primary); margin-bottom: 8px; font-size: 16px;">School Monthly Package</h4>
+                            <p style="color: var(--gold-bright); font-size: 20px; font-weight: bold; margin: 0;">₹5,000-15,000</p>
+                            <p style="color: var(--text-muted); font-size: 12px; margin: 8px 0 0 0;">Unlimited school documentation</p>
+                        </div>
+
+                        <div style="background: rgba(11, 11, 11, 0.5); padding: 16px; border-radius: 8px; margin-bottom: 20px;">
+                            <h4 style="color: var(--text-primary); margin-bottom: 8px; font-size: 16px;">Creator Monthly Package</h4>
+                            <p style="color: var(--gold-bright); font-size: 20px; font-weight: bold; margin: 0;">₹15,000-40,000</p>
+                            <p style="color: var(--text-muted); font-size: 12px; margin: 8px 0 0 0;">Unlimited video editing & optimization</p>
+                        </div>
+
+                        <div style="background: rgba(11, 11, 11, 0.5); padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+                            <h4 style="color: var(--text-primary); margin-bottom: 8px; font-size: 16px;">Enterprise Custom</h4>
+                            <p style="color: var(--gold-bright); font-size: 20px; font-weight: bold; margin: 0;">Custom Pricing</p>
+                            <p style="color: var(--text-muted); font-size: 12px; margin: 8px 0 0 0;">Request for your needs</p>
+                        </div>
+
+                        <p style="color: var(--text-muted); font-size: 13px; margin-bottom: 24px; line-height: 1.6;">
+                            <strong>Payment:</strong> 50% advance, 50% on delivery. Monthly packages can be billed weekly or monthly.
+                        </p>
+
+                        <button onclick="window.open('https://wa.me/916388224877?text=Hello%20QuickServe%20IT%2C%20I%20am%20interested%20in%20custom%20and%20bulk%20projects.', '_blank')" class="btn btn--primary" style="width: 100%; margin-bottom: 12px;">
+                            <i class="fab fa-whatsapp"></i> Get Custom Quote
+                        </button>
+                        <button onclick="window.location.href='../index.html#contact'" class="btn btn--secondary" style="width: 100%;">
+                            Contact Us
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== WHAT'S INCLUDED ===== -->
+    <section style="padding: 60px 20px; background: rgba(199, 154, 27, 0.05);">
+        <div class="container">
+            <h2 style="font-size: 36px; color: var(--gold-bright); text-align: center; margin-bottom: 48px;">Why Choose Custom & Bulk Packages?</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px;">
+                <div style="background: rgba(17, 17, 17, 0.6); padding: 24px; border-radius: 12px; border: 1px solid rgba(199, 154, 27, 0.2);">
+                    <h4 style="color: var(--gold-bright); margin-bottom: 12px; font-size: 18px;">💰 Better Pricing</h4>
+                    <p style="color: var(--text-muted); font-size: 14px;">Save 10-20% on bulk orders or get unlimited work with monthly packages.</p>
+                </div>
+                <div style="background: rgba(17, 17, 17, 0.6); padding: 24px; border-radius: 12px; border: 1px solid rgba(199, 154, 27, 0.2);">
+                    <h4 style="color: var(--gold-bright); margin-bottom: 12px; font-size: 18px;">🎯 Consistency</h4>
+                    <p style="color: var(--text-muted); font-size: 14px;">All work follows the same quality standards and formatting guidelines.</p>
+                </div>
+                <div style="background: rgba(17, 17, 17, 0.6); padding: 24px; border-radius: 12px; border: 1px solid rgba(199, 154, 27, 0.2);">
+                    <h4 style="color: var(--gold-bright); margin-bottom: 12px; font-size: 18px;">⚡ Priority Support</h4>
+                    <p style="color: var(--text-muted); font-size: 14px;">Monthly package holders get priority support and faster turnaround.</p>
+                </div>
+                <div style="background: rgba(17, 17, 17, 0.6); padding: 24px; border-radius: 12px; border: 1px solid rgba(199, 154, 27, 0.2);">
+                    <h4 style="color: var(--gold-bright); margin-bottom: 12px; font-size: 18px;">🤝 Dedicated Team</h4>
+                    <p style="color: var(--text-muted); font-size: 14px;">Enterprise clients get a dedicated account manager for smooth coordination.</p>
+                </div>
+                <div style="background: rgba(17, 17, 17, 0.6); padding: 24px; border-radius: 12px; border: 1px solid rgba(199, 154, 27, 0.2);">
+                    <h4 style="color: var(--gold-bright); margin-bottom: 12px; font-size: 18px;">📅 Flexible Billing</h4>
+                    <p style="color: var(--text-muted); font-size: 14px;">Monthly packages can be billed weekly or monthly as per your preference.</p>
+                </div>
+                <div style="background: rgba(17, 17, 17, 0.6); padding: 24px; border-radius: 12px; border: 1px solid rgba(199, 154, 27, 0.2);">
+                    <h4 style="color: var(--gold-bright); margin-bottom: 12px; font-size: 18px;">🔄 Scalable</h4>
+                    <p style="color: var(--text-muted); font-size: 14px;">Upgrade, downgrade, or customize packages anytime based on your needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIAL ===== -->
+    <section style="padding: 60px 20px;">
+        <div class="container">
+            <div style="max-width: 700px; margin: 0 auto; background: linear-gradient(135deg, rgba(199, 154, 27, 0.1), rgba(212, 175, 55, 0.05)); border: 1px solid rgba(199, 154, 27, 0.3); border-radius: 16px; padding: 32px; text-align: center;">
+                <p style="font-size: 18px; color: var(--text-muted); font-style: italic; margin-bottom: 20px; line-height: 1.8;">
+                    "We partnered with QuickServe IT for our school's entire monthly document management. The bulk discount and reliability have been a game changer for us. They're now part of our team!"
+                </p>
+                <p style="color: var(--gold-bright); font-weight: 600; margin: 0;">
+                    — Teacher & Coordinator
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA SECTION ===== -->
+    <section style="padding: 60px 20px; background: rgba(199, 154, 27, 0.05); text-align: center;">
+        <div class="container">
+            <h2 style="font-size: 36px; color: var(--gold-bright); margin-bottom: 16px;">Have Unique Needs? We Can Help!</h2>
+            <p style="font-size: 16px; color: var(--text-muted); margin-bottom: 32px;">Tell us about your project. We'll create a custom solution that works for you.</p>
+            <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                <button onclick="window.location.href='../index.html#contact'" class="btn btn--primary btn--lg">
+                    Request Custom Quote
+                </button>
+                <button onclick="window.location.href='index.html'" class="btn btn--secondary btn--lg">
+                    ← Back to Services
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer style="background: rgba(17, 17, 17, 0.8); border-top: 1px solid rgba(199, 154, 27, 0.2); padding: 40px 20px; text-align: center; margin-top: 60px;">
+        <div class="container">
+            <p style="color: var(--text-muted); font-size: 14px;">© 2024 QuickServe IT. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../app.js"></script>
+</body>
+</html>
