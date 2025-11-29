@@ -1,0 +1,32 @@
+{
+  "name": "quickserveit-v1",
+  "version": "1.0.0",
+  "description": "QuickServe IT - Professional Digital Services Platform",
+  "main": "public/index.html",
+  "scripts": {
+    "dev": "npx http-server public -p 3000 -o",
+    "start": "npx http-server public -p 8080",
+    "build": "echo 'Static site - no build required'",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [
+    "digital-services",
+    "typing-services",
+    "video-editing",
+    "school-services",
+    "rural-india",
+    "professional-services"
+  ],
+  "author": "QuickServe IT",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/caspermorgan/QuickserveIT-V.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
