@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Different - QuickServe IT</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="header-container">
+            <a href="../index.html" class="logo">
+                <span class="logo-text">⚡ QuickServe IT</span>
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="../index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="langSwitch" class="btn btn--secondary btn--sm">हिंदी</button>
+                <button id="themeToggle" class="btn btn--secondary btn--sm">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== BREADCRUMB ===== -->
+    <section style="padding-top: 100px; padding-bottom: 20px;">
+        <div class="container">
+            <nav style="font-size: 14px; color: var(--text-muted);">
+                <a href="../index.html" style="color: var(--gold-primary);">Home</a> 
+                <span> / </span>
+                <a href="index.html" style="color: var(--gold-primary);">About</a> 
+                <span> / </span>
+                <span style="color: var(--text-primary);">Why Different</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT NAVIGATION TABS ===== -->
+    <section style="padding: 40px 20px; background: rgba(199, 154, 27, 0.05);">
+        <div class="container">
+            <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 40px;">
+                <a href="index.html" class="btn btn--secondary" style="text-decoration: none;">About Overview</a>
+                <a href="founder-story.html" class="btn btn--secondary" style="text-decoration: none;">Founder Story</a>
+                <a href="team.html" class="btn btn--secondary" style="text-decoration: none;">Our Team</a>
+                <a href="vision-mission.html" class="btn btn--secondary" style="text-decoration: none;">Vision & Mission</a>
+                <a href="why-different.html" class="btn btn--primary" style="text-decoration: none;">Why Different</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section style="padding: 60px 20px; text-align: center;">
+        <div class="container">
+            <h1 style="font-size: 48px; color: var(--gold-bright); margin-bottom: 16px;">✨ Why We're Different</h1>
+            <p style="font-size: 18px; color: var(--text-muted); max-width: 700px; margin: 0 auto;">
+                What sets QuickServe IT apart from competitors. Our unique approach, values, and commitment to excellence.
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== COMPARISON ===== -->
+    <section style="padding: 60px 20px;">
+        <div class="container">
+            <h2 style="font-size: 32px; color: var(--gold-bright); margin-bottom: 48px; text-align: center;">We're Different Because</h2>
+            
+            <div style="display: grid; gap: 32px;">
+                <!-- Difference 1 -->
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: center;">
+                    <div>
+                        <div style="font-size: 48px; margin-bottom: 16px;">⚡</div>
+                        <h3 style="color: var(--gold-bright); font-size: 24px; margin-bottom: 12px;">Speed Without Compromise</h3>
+                        <p style="color: var(--text-muted); font-size: 14px; line-height: 1.8;">
+                            We deliver fast without sacrificing quality. Our average 24-hour turnaround comes with a 99% accuracy guarantee. Others offer speed OR quality. We give you both.
+                        </p>
+                    </div>
+                    <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; padding: 28px; text-align: center;">
+                        <p style="color: var(--gold-bright); font-size: 28px; font-weight: bold; margin-bottom: 8px;">24hrs</p>
+                        <p style="color: var(--text-muted); font-size: 13px; margin: 0;">Average turnaround</p>
+                        <p style="color: var(--text-muted); font-size: 13px; margin: 8px 0 0 0;">99% accuracy</p>
+                    </div>
+                </div>
+
+                <!-- Difference 2 -->
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: center;">
+                    <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; padding: 28px; text-align: center;">
+                        <p style="color: var(--gold-bright); font-size: 28px; font-weight: bold; margin-bottom: 8px;">Bilingual</p>
+                        <p style="color: var(--text-muted); font-size: 13px; margin: 0;">English & [translate:हिंदी] Hindi</p>
+                        <p style="color: var(--text-muted); font-size: 13px; margin: 8px 0 0 0;">Cultural expertise</p>
+                    </div>
+                    <div>
+                        <div style="font-size: 48px; margin-bottom: 16px;">🌍</div>
+                        <h3 style="color: var(--gold-bright); font-size: 24px; margin-bottom: 12px;">India-First Approach</h3>
+                        <p style="color: var(--text-muted); font-size: 14px; line-height: 1.8;">
+                            We understand India's market, education system, and cultural context. Bilingual support (English & [translate:हिंदी] Hindi), local pricing, and cultural awareness that others lack.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Difference 3 -->
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: center;">
+                    <div>
+                        <div style="font-size: 48px; margin-bottom: 16px;">💎</div>
+                        <h3 style="color: var(--gold-bright); font-size: 24px; margin-bottom: 12px;">Quality-First Culture</h3>
+                        <p style="color: var(--text-muted); font-size: 14px; line-height: 1.8;">
+                            Quality isn't an afterthought—it's built into our process. Double-check system, automated quality verification, and dedicated QA team ensure consistency. We deliver excellence every time.
+                        </p>
+                    </div>
+                    <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; padding: 28px; text-align: center;">
+                        <p style="color: var(--gold-bright); font-size: 28px; font-weight: bold; margin-bottom: 8px;">100%</p>
+                        <p style="color: var(--text-muted); font-size: 13px; margin: 0;">Double-checked projects</p>
+                        <p style="color: var(--text-muted); font-size: 13px; margin: 8px 0 0 0;">Zero errors acceptable</p>
+                    </div>
+                </div>
+
+                <!-- Difference 4 -->
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: center;">
+                    <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; padding: 28px; text-align: center;">
+                        <p style="color: var(--gold-bright); font-size: 28px; font-weight: bold; margin-bottom: 8px;">₹2-3</p>
+                        <p style="color: var(--text-muted); font-size: 13px; margin: 0;">Per word for typing</p>
+                        <p style="color: var(--text-muted); font-size: 13px; margin: 8px 0 0 0;">Fair pricing guarantee</p>
+                    </div>
+                    <div>
+                        <div style="font-size: 48px; margin-bottom: 16px;">💰</div>
+                        <h3 style="color: var(--gold-bright); font-size: 24px; margin-bottom: 12px;">Transparent Pricing</h3>
+                        <p style="color: var(--text-muted); font-size: 14px; line-height: 1.8;">
+                            No hidden charges. No surprise costs. Clear, competitive pricing with bulk discounts available. You know exactly what you're paying for. We believe in fairness and transparency.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Difference 5 -->
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: center;">
+                    <div>
+                        <div style="font-size: 48px; margin-bottom: 16px;">🎯</div>
+                        <h3 style="color: var(--gold-bright); font-size: 24px; margin-bottom: 12px;">Client-Centric Approach</h3>
+                        <p style="color: var(--text-muted); font-size: 14px; line-height: 1.8;">
+                            Your success is our success. We listen to your needs, adapt to your requirements, and go the extra mile. Not just completing tasks, but solving your problems.
+                        </p>
+                    </div>
+                    <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; padding: 28px; text-align: center;">
+                        <p style="color: var(--gold-bright); font-size: 28px; font-weight: bold; margin-bottom: 8px;">100%</p>
+                        <p style="color: var(--text-muted); font-size: 13px; margin: 0;">Client satisfaction</p>
+                        <p style="color: var(--text-muted); font-size: 13px; margin: 8px 0 0 0;">No exceptions</p>
+                    </div>
+                </div>
+
+                <!-- Difference 6 -->
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: center;">
+                    <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; padding: 28px; text-align: center;">
+                        <p style="color: var(--gold-bright); font-size: 28px; font-weight: bold; margin-bottom: 8px;">4 Services</p>
+                        <p style="color: var(--text-muted); font-size: 13px; margin: 0;">Typing, School, Video, Custom</p>
+                        <p style="color: var(--text-muted); font-size: 13px; margin: 8px 0 0 0;">Growing every year</p>
+                    </div>
+                    <div>
+                        <div style="font-size: 48px; margin-bottom: 16px;">🚀</div>
+                        <h3 style="color: var(--gold-bright); font-size: 24px; margin-bottom: 12px;">Growing Ecosystem</h3>
+                        <p style="color: var(--text-muted); font-size: 14px; line-height: 1.8;">
+                            We're not stagnant. We grow, innovate, and expand. New services added regularly. Better tools implemented continuously. We invest in staying ahead.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== COMPARISON TABLE ===== -->
+    <section style="padding: 60px 20px; background: rgba(199, 154, 27, 0.05);">
+        <div class="container">
+            <h2 style="font-size: 32px; color: var(--gold-bright); margin-bottom: 48px; text-align: center;">How We Compare</h2>
+            
+            <div style="background: rgba(17, 17, 17, 0.6); border-radius: 12px; overflow: hidden;">
+                <table style="width: 100%; border-collapse: collapse;">
+                    <thead>
+                        <tr style="background: rgba(199, 154, 27, 0.15);">
+                            <th style="padding: 16px; text-align: left; color: var(--gold-bright); border-bottom: 2px solid rgba(199, 154, 27, 0.3);">Feature</th>
+                            <th style="padding: 16px; text-align: center; color: var(--gold-bright); border-bottom: 2px solid rgba(199, 154, 27, 0.3);">QuickServe IT</th>
+                            <th style="padding: 16px; text-align: center; color: var(--gold-bright); border-bottom: 2px solid rgba(199, 154, 27, 0.3);">Competitors</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid rgba(199, 154, 27, 0.1);">
+                            <td style="padding: 16px; color: var(--text-primary);">Speed (Turnaround)</td>
+                            <td style="padding: 16px; text-align: center; color: var(--text-muted);">24 hours avg</td>
+                            <td style="padding: 16px; text-align: center; color: var(--text-muted);">3-5 days</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid rgba(199, 154, 27, 0.1);">
+                            <td style="padding: 16px; color: var(--text-primary);">Quality Guarantee</td>
+                            <td style="padding: 16px; text-align: center; color: var(--text-muted);">99% accuracy</td>
+                            <td style="padding: 16px; text-align: center; color: var(--text-muted);">90-95%</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid rgba(199, 154, 27, 0.1);">
+                            <td style="padding: 16px; color: var(--text-primary);">Bilingual Support</td>
+                            <td style="padding: 16px; text-align: center; color: var(--gold-bright);">✓ Yes</td>
+                            <td style="padding: 16px; text-align: center; color: var(--text-muted);">Limited</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid rgba(199, 154, 27, 0.1);">
+                            <td style="padding: 16px; color: var(--text-primary);">Transparent Pricing</td>
+                            <td style="padding: 16px; text-align: center; color: var(--gold-bright);">✓ Yes</td>
+                            <td style="padding: 16px; text-align: center; color: var(--text-muted);">Hidden charges</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid rgba(199, 154, 27, 0.1);">
+                            <td style="padding: 16px; color: var(--text-primary);">Bulk Discounts</td>
+                            <td style="padding: 16px; text-align: center; color: var(--gold-bright);">✓ 5-20% OFF</td>
+                            <td style="padding: 16px; text-align: center; color: var(--text-muted);">None</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid rgba(199, 154, 27, 0.1);">
+                            <td style="padding: 16px; color: var(--text-primary);">Monthly Packages</td>
+                            <td style="padding: 16px; text-align: center; color: var(--gold-bright);">✓ Yes</td>
+                            <td style="padding: 16px; text-align: center; color: var(--text-muted);">Rare</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 16px; color: var(--text-primary);">Client Satisfaction</td>
+                            <td style="padding: 16px; text-align: center; color: var(--gold-bright);">100%</td>
+                            <td style="padding: 16px; text-align: center; color: var(--text-muted);">85-90%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA SECTION ===== -->
+    <section style="padding: 60px 20px; text-align: center;">
+        <div class="container">
+            <h2 style="font-size: 36px; color: var(--gold-bright); margin-bottom: 16px;">Experience The Difference</h2>
+            <p style="font-size: 16px; color: var(--text-muted); margin-bottom: 32px;">Choose quality, speed, and reliability. Choose QuickServe IT.</p>
+            <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                <a href="../index.html#contact" class="btn btn--primary btn--lg" style="text-decoration: none;">
+                    Get Started Now
+                </a>
+                <a href="index.html" class="btn btn--secondary btn--lg" style="text-decoration: none;">
+                    Back to About
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer style="background: rgba(17, 17, 17, 0.8); border-top: 1px solid rgba(199, 154, 27, 0.2); padding: 40px 20px; text-align: center; margin-top: 60px;">
+        <div class="container">
+            <p style="color: var(--text-muted); font-size: 14px;">© 2024 QuickServe IT. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../app.js"></script>
+</body>
+</html>
