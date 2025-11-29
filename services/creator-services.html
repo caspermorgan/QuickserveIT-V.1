@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creator Services - QuickServe IT</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="header-container">
+            <a href="../index.html" class="logo">
+                <span class="logo-text">⚡ QuickServe IT</span>
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="../index.html#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="../index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="langSwitch" class="btn btn--secondary btn--sm">हिंदी</button>
+                <button id="themeToggle" class="btn btn--secondary btn--sm">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== BREADCRUMB ===== -->
+    <section style="padding-top: 100px; padding-bottom: 20px;">
+        <div class="container">
+            <nav style="font-size: 14px; color: var(--text-muted);">
+                <a href="../index.html" style="color: var(--gold-primary);">Home</a> 
+                <span> / </span>
+                <a href="index.html" style="color: var(--gold-primary);">Services</a> 
+                <span> / </span>
+                <span style="color: var(--text-primary);">Creator Services</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section style="padding: 60px 20px; text-align: center;">
+        <div class="container">
+            <h1 style="font-size: 48px; color: var(--gold-bright); margin-bottom: 16px;">🎬 Creator Services</h1>
+            <p style="font-size: 18px; color: var(--text-muted); max-width: 700px; margin: 0 auto;">
+                Professional video editing, audio enhancement, script writing, and content repurposing. Perfect for YouTube creators, educators, and content producers.
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <section style="padding: 60px 20px;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
+                <!-- LEFT: Service Details -->
+                <div>
+                    <h2 style="font-size: 32px; color: var(--gold-bright); margin-bottom: 24px;">What We Offer</h2>
+                    
+                    <div style="background: rgba(199, 154, 27, 0.1); border-left: 4px solid var(--gold-bright); padding: 20px; margin-bottom: 24px; border-radius: 8px;">
+                        <h3 style="color: var(--text-primary); margin-bottom: 12px;">Professional Video Editing</h3>
+                        <ul style="color: var(--text-muted); line-height: 1.8; list-style: none; padding: 0;">
+                            <li>✓ Full video editing (cuts, transitions, effects)</li>
+                            <li>✓ Color grading and audio normalization</li>
+                            <li>✓ Intro/outro creation and branding</li>
+                            <li>✓ Fast-paced cuts for educational content</li>
+                        </ul>
+                    </div>
+
+                    <div style="background: rgba(199, 154, 27, 0.1); border-left: 4px solid var(--gold-bright); padding: 20px; margin-bottom: 24px; border-radius: 8px;">
+                        <h3 style="color: var(--text-primary); margin-bottom: 12px;">Audio Enhancement</h3>
+                        <ul style="color: var(--text-muted); line-height: 1.8; list-style: none; padding: 0;">
+                            <li>✓ Background noise removal</li>
+                            <li>✓ Audio level normalization</li>
+                            <li>✓ Royalty-free music selection and integration</li>
+                            <li>✓ Voiceover enhancement</li>
+                        </ul>
+                    </div>
+
+                    <div style="background: rgba(199, 154, 27, 0.1); border-left: 4px solid var(--gold-bright); padding: 20px; margin-bottom: 24px; border-radius: 8px;">
+                        <h3 style="color: var(--text-primary); margin-bottom: 12px;">Script Writing & Structuring</h3>
+                        <ul style="color: var(--text-muted); line-height: 1.8; list-style: none; padding: 0;">
+                            <li>✓ YouTube script writing</li>
+                            <li>✓ Educational content structuring</li>
+                            <li>✓ Hooks, CTAs, and engagement optimization</li>
+                            <li>✓ SEO-friendly titles and descriptions</li>
+                        </ul>
+                    </div>
+
+                    <div style="background: rgba(199, 154, 27, 0.1); border-left: 4px solid var(--gold-bright); padding: 20px; margin-bottom: 24px; border-radius: 8px;">
+                        <h3 style="color: var(--text-primary); margin-bottom: 12px;">Content Repurposing</h3>
+                        <ul style="color: var(--text-muted); line-height: 1.8; list-style: none; padding: 0;">
+                            <li>✓ YouTube long videos → YouTube Shorts</li>
+                            <li>✓ Video → Instagram Reels & TikTok</li>
+                            <li>✓ Multi-format content optimization</li>
+                            <li>✓ Thumbnail design basics</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- RIGHT: Pricing & CTA -->
+                <div>
+                    <div style="background: linear-gradient(135deg, rgba(199, 154, 27, 0.15), rgba(212, 175, 55, 0.08)); border: 2px solid rgba(199, 154, 27, 0.4); border-radius: 16px; padding: 32px; position: sticky; top: 100px;">
+                        <h3 style="color: var(--gold-bright); font-size: 28px; margin-bottom: 24px;">Service Pricing</h3>
+                        
+                        <div style="background: rgba(11, 11, 11, 0.5); padding: 16px; border-radius: 8px; margin-bottom: 20px;">
+                            <h4 style="color: var(--text-primary); margin-bottom: 8px; font-size: 16px;">Video Editing</h4>
+                            <p style="color: var(--gold-bright); font-size: 20px; font-weight: bold; margin: 0;">₹500-2000</p>
+                            <p style="color: var(--text-muted); font-size: 12px; margin: 8px 0 0 0;">Per minute of video</p>
+                        </div>
+
+                        <div style="background: rgba(11, 11, 11, 0.5); padding: 16px; border-radius: 8px; margin-bottom: 20px;">
+                            <h4 style="color: var(--text-primary); margin-bottom: 8px; font-size: 16px;">Audio Cleanup</h4>
+                            <p style="color: var(--gold-bright); font-size: 20px; font-weight: bold; margin: 0;">₹200-500</p>
+                            <p style="color: var(--text-muted); font-size: 12px; margin: 8px 0 0 0;">Per minute of audio</p>
+                        </div>
+
+                        <div style="background: rgba(11, 11, 11, 0.5); padding: 16px; border-radius: 8px; margin-bottom: 20px;">
+                            <h4 style="color: var(--text-primary); margin-bottom: 8px; font-size: 16px;">Script Writing</h4>
+                            <p style="color: var(--gold-bright); font-size: 20px; font-weight: bold; margin: 0;">₹2-5</p>
+                            <p style="color: var(--text-muted); font-size: 12px; margin: 8px 0 0 0;">Per word</p>
+                        </div>
+
+                        <div style="background: rgba(11, 11, 11, 0.5); padding: 16px; border-radius: 8px; margin-bottom: 20px;">
+                            <h4 style="color: var(--text-primary); margin-bottom: 8px; font-size: 16px;">Content Repurposing</h4>
+                            <p style="color: var(--gold-bright); font-size: 20px; font-weight: bold; margin: 0;">₹1000-2000</p>
+                            <p style="color: var(--text-muted); font-size: 12px; margin: 8px 0 0 0;">Per project (multiple formats)</p>
+                        </div>
+
+                        <div style="background: rgba(11, 11, 11, 0.5); padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+                            <h4 style="color: var(--text-primary); margin-bottom: 8px; font-size: 16px;">Creator Monthly Package</h4>
+                            <p style="color: var(--gold-bright); font-size: 20px; font-weight: bold; margin: 0;">₹15,000-40,000</p>
+                            <p style="color: var(--text-muted); font-size: 12px; margin: 8px 0 0 0;">Unlimited editing & optimization</p>
+                        </div>
+
+                        <p style="color: var(--text-muted); font-size: 13px; margin-bottom: 24px; line-height: 1.6;">
+                            <strong>Payment:</strong> 50% advance, 50% on delivery. Monthly packages include priority support.
+                        </p>
+
+                        <button onclick="window.open('https://wa.me/916388224877?text=Hello%20QuickServe%20IT%2C%20I%20am%20interested%20in%20Creator%20services.', '_blank')" class="btn btn--primary" style="width: 100%; margin-bottom: 12px;">
+                            <i class="fab fa-whatsapp"></i> Get Quote on WhatsApp
+                        </button>
+                        <button onclick="window.location.href='../index.html#contact'" class="btn btn--secondary" style="width: 100%;">
+                            Contact Us
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== WHAT'S INCLUDED ===== -->
+    <section style="padding: 60px 20px; background: rgba(199, 154, 27, 0.05);">
+        <div class="container">
+            <h2 style="font-size: 36px; color: var(--gold-bright); text-align: center; margin-bottom: 48px;">What's Included in Every Project</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px;">
+                <div style="background: rgba(17, 17, 17, 0.6); padding: 24px; border-radius: 12px; border: 1px solid rgba(199, 154, 27, 0.2);">
+                    <h4 style="color: var(--gold-bright); margin-bottom: 12px; font-size: 18px;">✓ Professional Quality</h4>
+                    <p style="color: var(--text-muted); font-size: 14px;">YouTube-ready quality with proper aspect ratios and export settings.</p>
+                </div>
+                <div style="background: rgba(17, 17, 17, 0.6); padding: 24px; border-radius: 12px; border: 1px solid rgba(199, 154, 27, 0.2);">
+                    <h4 style="color: var(--gold-bright); margin-bottom: 12px; font-size: 18px;">✓ Fast Turnaround</h4>
+                    <p style="color: var(--text-muted); font-size: 14px;">Quick delivery without sacrificing quality. Standard 5-7 day turnaround.</p>
+                </div>
+                <div style="background: rgba(17, 17, 17, 0.6); padding: 24px; border-radius: 12px; border: 1px solid rgba(199, 154, 27, 0.2);">
+                    <h4 style="color: var(--gold-bright); margin-bottom: 12px; font-size: 18px;">✓ Multiple Formats</h4>
+                    <p style="color: var(--text-muted); font-size: 14px;">Delivered in MP4, MOV, or your preferred format with all codecs.</p>
+                </div>
+                <div style="background: rgba(17, 17, 17, 0.6); padding: 24px; border-radius: 12px; border: 1px solid rgba(199, 154, 27, 0.2);">
+                    <h4 style="color: var(--gold-bright); margin-bottom: 12px; font-size: 18px;">✓ Free Revisions</h4>
+                    <p style="color: var(--text-muted); font-size: 14px;">Unlimited revisions until your content is exactly how you want it.</p>
+                </div>
+                <div style="background: rgba(17, 17, 17, 0.6); padding: 24px; border-radius: 12px; border: 1px solid rgba(199, 154, 27, 0.2);">
+                    <h4 style="color: var(--gold-bright); margin-bottom: 12px; font-size: 18px;">✓ Optimization Tips</h4>
+                    <p style="color: var(--text-muted); font-size: 14px;">Free advice on titles, descriptions, and YouTube SEO best practices.</p>
+                </div>
+                <div style="background: rgba(17, 17, 17, 0.6); padding: 24px; border-radius: 12px; border: 1px solid rgba(199, 154, 27, 0.2);">
+                    <h4 style="color: var(--gold-bright); margin-bottom: 12px; font-size: 18px;">✓ Creator Support</h4>
+                    <p style="color: var(--text-muted); font-size: 14px;">Direct communication with your editor. Priority support for monthly packages.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIAL ===== -->
+    <section style="padding: 60px 20px;">
+        <div class="container">
+            <div style="max-width: 700px; margin: 0 auto; background: linear-gradient(135deg, rgba(199, 154, 27, 0.1), rgba(212, 175, 55, 0.05)); border: 1px solid rgba(199, 154, 27, 0.3); border-radius: 16px; padding: 32px; text-align: center;">
+                <p style="font-size: 18px; color: var(--text-muted); font-style: italic; margin-bottom: 20px; line-height: 1.8;">
+                    "My YouTube channel grew 10x faster after using QuickServe IT's video editing service. The quality is professional, and they understand educational content perfectly. Absolutely worth it!"
+                </p>
+                <p style="color: var(--gold-bright); font-weight: 600; margin: 0;">
+                    — Educational Content Creator
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA SECTION ===== -->
+    <section style="padding: 60px 20px; background: rgba(199, 154, 27, 0.05); text-align: center;">
+        <div class="container">
+            <h2 style="font-size: 36px; color: var(--gold-bright); margin-bottom: 16px;">Ready to Level Up Your Content?</h2>
+            <p style="font-size: 16px; color: var(--text-muted); margin-bottom: 32px;">Let us handle editing so you can focus on creating. Start with one video or a monthly package.</p>
+            <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                <button onclick="window.location.href='../index.html#contact'" class="btn btn--primary btn--lg">
+                    Get Free Quote
+                </button>
+                <button onclick="window.location.href='index.html'" class="btn btn--secondary btn--lg">
+                    ← Back to Services
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer style="background: rgba(17, 17, 17, 0.8); border-top: 1px solid rgba(199, 154, 27, 0.2); padding: 40px 20px; text-align: center; margin-top: 60px;">
+        <div class="container">
+            <p style="color: var(--text-muted); font-size: 14px;">© 2024 QuickServe IT. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../app.js"></script>
+</body>
+</html>
