@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Custom Quote - QuickServe IT</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="header-container">
+            <a href="../index.html" class="logo">
+                <span class="logo-text">⚡ QuickServe IT</span>
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="../services/index.html" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Pricing</a></li>
+                    <li class="nav-item"><a href="../index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="langSwitch" class="btn btn--secondary btn--sm">हिंदी</button>
+                <button id="themeToggle" class="btn btn--secondary btn--sm">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== BREADCRUMB ===== -->
+    <section style="padding-top: 100px; padding-bottom: 20px;">
+        <div class="container">
+            <nav style="font-size: 14px; color: var(--text-muted);">
+                <a href="../index.html" style="color: var(--gold-primary);">Home</a> 
+                <span> / </span>
+                <a href="index.html" style="color: var(--gold-primary);">Pricing</a> 
+                <span> / </span>
+                <span style="color: var(--text-primary);">Get Custom Quote</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section style="padding: 60px 20px; text-align: center;">
+        <div class="container">
+            <h1 style="font-size: 48px; color: var(--gold-bright); margin-bottom: 16px;">📋 Get Custom Quote</h1>
+            <p style="font-size: 18px; color: var(--text-muted); max-width: 700px; margin: 0 auto;">
+                Tell us about your project. We'll provide a transparent, detailed quote within 24 hours with no obligation.
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== PRICING NAVIGATION TABS ===== -->
+    <section style="padding: 40px 20px; background: rgba(199, 154, 27, 0.05);">
+        <div class="container">
+            <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 40px;">
+                <a href="index.html" class="btn btn--secondary" style="text-decoration: none;">
+                    Pricing Overview
+                </a>
+                <a href="service-rates.html" class="btn btn--secondary" style="text-decoration: none;">
+                    Service Rates
+                </a>
+                <a href="bulk-deals.html" class="btn btn--secondary" style="text-decoration: none;">
+                    Bulk & Deals
+                </a>
+                <a href="custom-quote.html" class="btn btn--primary" style="text-decoration: none;">
+                    Get Custom Quote
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <section style="padding: 60px 20px;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
+                <!-- LEFT: Contact Methods -->
+                <div>
+                    <h2 style="font-size: 32px; color: var(--gold-bright); margin-bottom: 32px;">Quick Contact Methods</h2>
+                    
+                    <!-- WhatsApp -->
+                    <div style="background: linear-gradient(135deg, rgba(76, 175, 80, 0.15), rgba(56, 142, 60, 0.08)); border: 2px solid rgba(76, 175, 80, 0.3); border-radius: 12px; padding: 24px; margin-bottom: 24px;">
+                        <h3 style="color: #25D366; font-size: 22px; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+                            <i class="fab fa-whatsapp"></i> WhatsApp (Fastest)
+                        </h3>
+                        <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 16px;">
+                            Share your project details and get a quote within 1-2 hours.
+                        </p>
+                        <button onclick="window.open('https://wa.me/916388224877?text=Hello%20QuickServe%20IT%2C%20I%20need%20a%20custom%20quote%20for%20my%20project.%20Details%3A', '_blank')" class="btn btn--primary" style="width: 100%; background: #25D366;">
+                            <i class="fab fa-whatsapp"></i> Message on WhatsApp
+                        </button>
+                        <p style="color: var(--text-muted); font-size: 12px; margin-top: 12px;">+91 6388 2248 77</p>
+                    </div>
+
+                    <!-- Email -->
+                    <div style="background: linear-gradient(135deg, rgba(66, 133, 244, 0.15), rgba(51, 103, 214, 0.08)); border: 2px solid rgba(66, 133, 244, 0.3); border-radius: 12px; padding: 24px; margin-bottom: 24px;">
+                        <h3 style="color: #4285F4; font-size: 22px; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+                            <i class="fas fa-envelope"></i> Email
+                        </h3>
+                        <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 16px;">
+                            Send detailed project requirements. We reply within 24 hours.
+                        </p>
+                        <a href="mailto:letsquickserveit@gmail.com?subject=Custom%20Quote%20Request" class="btn btn--primary" style="width: 100%; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; background: #4285F4;">
+                            <i class="fas fa-envelope"></i> Send Email
+                        </a>
+                        <p style="color: var(--text-muted); font-size: 12px; margin-top: 12px;">letsquickserveit@gmail.com</p>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div style="background: linear-gradient(135deg, rgba(199, 154, 27, 0.15), rgba(212, 175, 55, 0.08)); border: 2px solid rgba(199, 154, 27, 0.3); border-radius: 12px; padding: 24px;">
+                        <h3 style="color: var(--gold-bright); font-size: 22px; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+                            <i class="fas fa-phone"></i> Contact Form
+                        </h3>
+                        <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 16px;">
+                            Fill out detailed form. We'll contact you within 24 hours.
+                        </p>
+                        <button onclick="document.querySelector('#quote-form').scrollIntoView({ behavior: 'smooth' })" class="btn btn--primary" style="width: 100%;">
+                            <i class="fas fa-arrow-down"></i> Go to Form Below
+                        </button>
+                    </div>
+                </div>
+
+                <!-- RIGHT: Quick Info -->
+                <div>
+                    <h2 style="font-size: 32px; color: var(--gold-bright); margin-bottom: 32px;">What We Need to Know</h2>
+                    
+                    <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; padding: 28px;">
+                        <h3 style="color: var(--text-primary); margin-bottom: 16px; font-size: 18px;">To give you accurate pricing, tell us:</h3>
+                        
+                        <ul style="color: var(--text-muted); line-height: 2; list-style: none; padding: 0; margin: 0;">
+                            <li style="padding-bottom: 12px; border-bottom: 1px solid rgba(199, 154, 27, 0.1);">
+                                <strong style="color: var(--gold-bright);">📋 Project Type</strong><br/>
+                                <span style="font-size: 12px;">Typing, formatting, video editing, etc.</span>
+                            </li>
+                            <li style="padding: 12px 0; padding-bottom: 12px; border-bottom: 1px solid rgba(199, 154, 27, 0.1);">
+                                <strong style="color: var(--gold-bright);">📊 Project Size</strong><br/>
+                                <span style="font-size: 12px;">Number of words, minutes, pages, or items</span>
+                            </li>
+                            <li style="padding: 12px 0; padding-bottom: 12px; border-bottom: 1px solid rgba(199, 154, 27, 0.1);">
+                                <strong style="color: var(--gold-bright);">⏰ Timeline</strong><br/>
+                                <span style="font-size: 12px;">When do you need it completed?</span>
+                            </li>
+                            <li style="padding: 12px 0; padding-bottom: 12px; border-bottom: 1px solid rgba(199, 154, 27, 0.1);">
+                                <strong style="color: var(--gold-bright);">🔄 Frequency</strong><br/>
+                                <span style="font-size: 12px;">One-time or recurring/monthly</span>
+                            </li>
+                            <li style="padding: 12px 0;">
+                                <strong style="color: var(--gold-bright);">📝 Special Requirements</strong><br/>
+                                <span style="font-size: 12px;">Any specific format, style, or requirements</span>
+                            </li>
+                        </ul>
+
+                        <div style="background: rgba(199, 154, 27, 0.1); border-left: 4px solid var(--gold-bright); padding: 16px; border-radius: 4px; margin-top: 24px;">
+                            <p style="color: var(--text-muted); font-size: 13px; margin: 0; line-height: 1.6;">
+                                <strong>💡 Tip:</strong> The more details you provide, the more accurate our quote will be!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== QUOTE FORM ===== -->
+    <section style="padding: 60px 20px; background: rgba(199, 154, 27, 0.05);" id="quote-form">
+        <div class="container">
+            <h2 style="font-size: 36px; color: var(--gold-bright); margin-bottom: 32px; text-align: center;">Request Custom Quote</h2>
+            
+            <div style="max-width: 600px; margin: 0 auto; background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; padding: 32px;">
+                <form onsubmit="handleQuoteSubmit(event)">
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 8px; color: var(--text-primary); font-weight: 600;">Your Name *</label>
+                        <input type="text" required style="width: 100%; padding: 12px; background: rgba(11, 11, 11, 0.6); border: 1px solid rgba(199, 154, 27, 0.3); border-radius: 8px; color: var(--text-primary); font-family: inherit;" placeholder="Your full name">
+                    </div>
+
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 8px; color: var(--text-primary); font-weight: 600;">Email Address *</label>
+                        <input type="email" required style="width: 100%; padding: 12px; background: rgba(11, 11, 11, 0.6); border: 1px solid rgba(199, 154, 27, 0.3); border-radius: 8px; color: var(--text-primary); font-family: inherit;" placeholder="your@email.com">
+                    </div>
+
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 8px; color: var(--text-primary); font-weight: 600;">Phone Number *</label>
+                        <input type="tel" required style="width: 100%; padding: 12px; background: rgba(11, 11, 11, 0.6); border: 1px solid rgba(199, 154, 27, 0.3); border-radius: 8px; color: var(--text-primary); font-family: inherit;" placeholder="+91 XXXXX XXXXX">
+                    </div>
+
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 8px; color: var(--text-primary); font-weight: 600;">Project Type *</label>
+                        <select required style="width: 100%; padding: 12px; background: rgba(11, 11, 11, 0.6); border: 1px solid rgba(199, 154, 27, 0.3); border-radius: 8px; color: var(--text-primary); font-family: inherit;">
+                            <option value="">Select a service...</option>
+                            <option value="typing">Typing & Document</option>
+                            <option value="school">School & Institute</option>
+                            <option value="creator">Creator Services</option>
+                            <option value="custom">Custom & Bulk</option>
+                            <option value="mixed">Mixed Services</option>
+                        </select>
+                    </div>
+
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 8px; color: var(--text-primary); font-weight: 600;">Project Details *</label>
+                        <textarea required style="width: 100%; padding: 12px; background: rgba(11, 11, 11, 0.6); border: 1px solid rgba(199, 154, 27, 0.3); border-radius: 8px; color: var(--text-primary); font-family: inherit; min-height: 120px; resize: vertical;" placeholder="Tell us about your project...&#10;- Project size (words, pages, minutes, etc.)&#10;- Timeline&#10;- Any special requirements"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn--primary" style="width: 100%; margin-bottom: 12px;">
+                        <i class="fas fa-paper-plane"></i> Send Quote Request
+                    </button>
+
+                    <p style="color: var(--text-muted); font-size: 12px; text-align: center;">
+                        We'll respond within 24 hours with a detailed, transparent quote.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA SECTION ===== -->
+    <section style="padding: 60px 20px; text-align: center;">
+        <div class="container">
+            <h2 style="font-size: 36px; color: var(--gold-bright); margin-bottom: 16px;">Have Questions?</h2>
+            <p style="font-size: 16px; color: var(--text-muted); margin-bottom: 32px;">Check our other pricing pages or contact us directly.</p>
+            <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                <a href="index.html" class="btn btn--secondary btn--lg" style="text-decoration: none;">
+                    Pricing Overview
+                </a>
+                <a href="service-rates.html" class="btn btn--secondary btn--lg" style="text-decoration: none;">
+                    View Service Rates
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer style="background: rgba(17, 17, 17, 0.8); border-top: 1px solid rgba(199, 154, 27, 0.2); padding: 40px 20px; text-align: center; margin-top: 60px;">
+        <div class="container">
+            <p style="color: var(--text-muted); font-size: 14px;">© 2024 QuickServe IT. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../app.js"></script>
+    <script>
+        function handleQuoteSubmit(e) {
+            e.preventDefault();
+            const form = e.target;
+            const name = form.querySelector('input[type="text"]').value;
+            const email = form.querySelector('input[type="email"]').value;
+            const phone = form.querySelector('input[type="tel"]').value;
+            const type = form.querySelector('select').value;
+            const details = form.querySelector('textarea').value;
+            
+            const message = `Hi QuickServe IT, I would like a custom quote.%0A%0AName: ${name}%0AEmail: ${email}%0APhone: ${phone}%0AProject Type: ${type}%0ADetails: ${details}`;
+            window.open(`https://wa.me/916388224877?text=${message}`, '_blank');
+            
+            form.reset();
+            alert('Thank you! Please check WhatsApp for the chat window.');
+        }
+    </script>
+</body>
+</html>
