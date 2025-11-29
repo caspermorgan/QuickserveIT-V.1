@@ -1,0 +1,197 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - QuickServe IT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">⚡ QuickServe IT</span>
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="langSwitch" class="btn btn--secondary btn--sm">हिंदी</button>
+                <button id="themeToggle" class="btn btn--secondary btn--sm">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== BREADCRUMB ===== -->
+    <section style="padding-top: 100px; padding-bottom: 20px;">
+        <div class="container">
+            <nav style="font-size: 14px; color: var(--text-muted);">
+                <a href="index.html" style="color: var(--gold-primary);">Home</a> 
+                <span> / </span>
+                <span style="color: var(--text-primary);">Blog</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section style="padding: 60px 20px; text-align: center;">
+        <div class="container">
+            <h1 style="font-size: 48px; color: var(--gold-bright); margin-bottom: 16px;">📚 Blog & Tips</h1>
+            <p style="font-size: 18px; color: var(--text-muted); max-width: 700px; margin: 0 auto;">
+                Learn productivity tips, industry insights, and best practices. Stay updated with QuickServe IT.
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== BLOG POSTS ===== -->
+    <section style="padding: 60px 20px;">
+        <div class="container">
+            <h2 style="font-size: 36px; color: var(--gold-bright); margin-bottom: 48px; text-align: center;">Latest Articles</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 32px;">
+                <!-- Post 1 -->
+                <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; overflow: hidden;">
+                    <div style="background: linear-gradient(135deg, rgba(199, 154, 27, 0.2), rgba(212, 175, 55, 0.1)); height: 180px; display: flex; align-items: center; justify-content: center; font-size: 48px;">
+                        ⚡
+                    </div>
+                    <div style="padding: 28px;">
+                        <p style="color: var(--gold-bright); font-size: 12px; margin: 0 0 8px 0; font-weight: 600;">
+                            <i class="fas fa-calendar" style="margin-right: 4px;"></i>Nov 28, 2025
+                        </p>
+                        <h3 style="color: var(--text-primary); font-size: 22px; margin-bottom: 12px;">10 Productivity Hacks to Save 10 Hours Weekly</h3>
+                        <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6; margin-bottom: 16px;">
+                            Discover time management techniques used by successful entrepreneurs and creators. Learn how to outsource tasks effectively and focus on what matters most.
+                        </p>
+                        <a href="#" style="color: var(--gold-bright); font-weight: 600; text-decoration: none;">Read More →</a>
+                    </div>
+                </div>
+
+                <!-- Post 2 -->
+                <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; overflow: hidden;">
+                    <div style="background: linear-gradient(135deg, rgba(199, 154, 27, 0.2), rgba(212, 175, 55, 0.1)); height: 180px; display: flex; align-items: center; justify-content: center; font-size: 48px;">
+                        🎬
+                    </div>
+                    <div style="padding: 28px;">
+                        <p style="color: var(--gold-bright); font-size: 12px; margin: 0 0 8px 0; font-weight: 600;">
+                            <i class="fas fa-calendar" style="margin-right: 4px;"></i>Nov 25, 2025
+                        </p>
+                        <h3 style="color: var(--text-primary); font-size: 22px; margin-bottom: 12px;">YouTube Success: Video Editing Best Practices</h3>
+                        <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6; margin-bottom: 16px;">
+                            Master the art of professional video editing. Learn pacing, color grading, and optimization techniques that increase viewer engagement and watch time.
+                        </p>
+                        <a href="#" style="color: var(--gold-bright); font-weight: 600; text-decoration: none;">Read More →</a>
+                    </div>
+                </div>
+
+                <!-- Post 3 -->
+                <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; overflow: hidden;">
+                    <div style="background: linear-gradient(135deg, rgba(199, 154, 27, 0.2), rgba(212, 175, 55, 0.1)); height: 180px; display: flex; align-items: center; justify-content: center; font-size: 48px;">
+                        📝
+                    </div>
+                    <div style="padding: 28px;">
+                        <p style="color: var(--gold-bright); font-size: 12px; margin: 0 0 8px 0; font-weight: 600;">
+                            <i class="fas fa-calendar" style="margin-right: 4px;"></i>Nov 22, 2025
+                        </p>
+                        <h3 style="color: var(--text-primary); font-size: 22px; margin-bottom: 12px;">Professional Document Formatting: A Complete Guide</h3>
+                        <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6; margin-bottom: 16px;">
+                            Learn how to format documents professionally. From academic papers to business reports, ensure your work looks polished and submission-ready.
+                        </p>
+                        <a href="#" style="color: var(--gold-bright); font-weight: 600; text-decoration: none;">Read More →</a>
+                    </div>
+                </div>
+
+                <!-- Post 4 -->
+                <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; overflow: hidden;">
+                    <div style="background: linear-gradient(135deg, rgba(199, 154, 27, 0.2), rgba(212, 175, 55, 0.1)); height: 180px; display: flex; align-items: center; justify-content: center; font-size: 48px;">
+                        🎓
+                    </div>
+                    <div style="padding: 28px;">
+                        <p style="color: var(--gold-bright); font-size: 12px; margin: 0 0 8px 0; font-weight: 600;">
+                            <i class="fas fa-calendar" style="margin-right: 4px;"></i>Nov 20, 2025
+                        </p>
+                        <h3 style="color: var(--text-primary); font-size: 22px; margin-bottom: 12px;">School Documentation Management: Streamline Your Admin Work</h3>
+                        <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6; margin-bottom: 16px;">
+                            Tips for principals and coordinators. Learn how to manage timetables, attendance, and records efficiently. Save hours on administrative work.
+                        </p>
+                        <a href="#" style="color: var(--gold-bright); font-weight: 600; text-decoration: none;">Read More →</a>
+                    </div>
+                </div>
+
+                <!-- Post 5 -->
+                <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; overflow: hidden;">
+                    <div style="background: linear-gradient(135deg, rgba(199, 154, 27, 0.2), rgba(212, 175, 55, 0.1)); height: 180px; display: flex; align-items: center; justify-content: center; font-size: 48px;">
+                        💼
+                    </div>
+                    <div style="padding: 28px;">
+                        <p style="color: var(--gold-bright); font-size: 12px; margin: 0 0 8px 0; font-weight: 600;">
+                            <i class="fas fa-calendar" style="margin-right: 4px;"></i>Nov 18, 2025
+                        </p>
+                        <h3 style="color: var(--text-primary); font-size: 22px; margin-bottom: 12px;">Outsourcing Digital Tasks: A Smart Business Move</h3>
+                        <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6; margin-bottom: 16px;">
+                            Why smart entrepreneurs outsource. Learn when to delegate, what tasks to outsource first, and how it impacts your business growth and profitability.
+                        </p>
+                        <a href="#" style="color: var(--gold-bright); font-weight: 600; text-decoration: none;">Read More →</a>
+                    </div>
+                </div>
+
+                <!-- Post 6 -->
+                <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; overflow: hidden;">
+                    <div style="background: linear-gradient(135deg, rgba(199, 154, 27, 0.2), rgba(212, 175, 55, 0.1)); height: 180px; display: flex; align-items: center; justify-content: center; font-size: 48px;">
+                        🌟
+                    </div>
+                    <div style="padding: 28px;">
+                        <p style="color: var(--gold-bright); font-size: 12px; margin: 0 0 8px 0; font-weight: 600;">
+                            <i class="fas fa-calendar" style="margin-right: 4px;"></i>Nov 15, 2025
+                        </p>
+                        <h3 style="color: var(--text-primary); font-size: 22px; margin-bottom: 12px;">Creator Economy: Scaling Your Content Successfully</h3>
+                        <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6; margin-bottom: 16px;">
+                            Essential tips for growing your channel. From thumbnail design to consistent uploads, learn how to scale your content business with less stress.
+                        </p>
+                        <a href="#" style="color: var(--gold-bright); font-weight: 600; text-decoration: none;">Read More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA SECTION ===== -->
+    <section style="padding: 60px 20px; background: rgba(199, 154, 27, 0.05); text-align: center;">
+        <div class="container">
+            <h2 style="font-size: 36px; color: var(--gold-bright); margin-bottom: 16px;">Ready to Transform Your Work?</h2>
+            <p style="font-size: 16px; color: var(--text-muted); margin-bottom: 32px;">Let QuickServe IT handle the technical work while you focus on growth.</p>
+            <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                <a href="index.html#contact" class="btn btn--primary btn--lg" style="text-decoration: none;">
+                    Get Started
+                </a>
+                <a href="faq.html" class="btn btn--secondary btn--lg" style="text-decoration: none;">
+                    Learn More
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer style="background: rgba(17, 17, 17, 0.8); border-top: 1px solid rgba(199, 154, 27, 0.2); padding: 40px 20px; text-align: center; margin-top: 60px;">
+        <div class="container">
+            <p style="color: var(--text-muted); font-size: 14px;">© 2024 QuickServe IT. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
