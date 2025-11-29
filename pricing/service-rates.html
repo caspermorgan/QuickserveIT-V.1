@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Rates - QuickServe IT</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="header-container">
+            <a href="../index.html" class="logo">
+                <span class="logo-text">⚡ QuickServe IT</span>
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="../services/index.html" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Pricing</a></li>
+                    <li class="nav-item"><a href="../index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="langSwitch" class="btn btn--secondary btn--sm">हिंदी</button>
+                <button id="themeToggle" class="btn btn--secondary btn--sm">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== BREADCRUMB ===== -->
+    <section style="padding-top: 100px; padding-bottom: 20px;">
+        <div class="container">
+            <nav style="font-size: 14px; color: var(--text-muted);">
+                <a href="../index.html" style="color: var(--gold-primary);">Home</a> 
+                <span> / </span>
+                <a href="index.html" style="color: var(--gold-primary);">Pricing</a> 
+                <span> / </span>
+                <span style="color: var(--text-primary);">Service Rates</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section style="padding: 60px 20px; text-align: center;">
+        <div class="container">
+            <h1 style="font-size: 48px; color: var(--gold-bright); margin-bottom: 16px;">Service Rates</h1>
+            <p style="font-size: 18px; color: var(--text-muted); max-width: 700px; margin: 0 auto;">
+                Detailed pricing for all our services. Choose based on your needs or mix and match for custom projects.
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== PRICING NAVIGATION TABS ===== -->
+    <section style="padding: 40px 20px; background: rgba(199, 154, 27, 0.05);">
+        <div class="container">
+            <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 40px;">
+                <a href="index.html" class="btn btn--secondary" style="text-decoration: none;">
+                    Pricing Overview
+                </a>
+                <a href="service-rates.html" class="btn btn--primary" style="text-decoration: none;">
+                    Service Rates
+                </a>
+                <a href="bulk-deals.html" class="btn btn--secondary" style="text-decoration: none;">
+                    Bulk & Deals
+                </a>
+                <a href="custom-quote.html" class="btn btn--secondary" style="text-decoration: none;">
+                    Get Custom Quote
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== RATES TABLE ===== -->
+    <section style="padding: 60px 20px;">
+        <div class="container">
+            <!-- Typing & Document -->
+            <div style="margin-bottom: 48px;">
+                <h2 style="font-size: 32px; color: var(--gold-bright); margin-bottom: 24px;">📝 Typing & Document Services</h2>
+                <div style="background: rgba(17, 17, 17, 0.6); border-radius: 12px; overflow: hidden;">
+                    <table style="width: 100%; border-collapse: collapse;">
+                        <thead>
+                            <tr style="background: rgba(199, 154, 27, 0.15);">
+                                <th style="padding: 16px; text-align: left; color: var(--gold-bright); border-bottom: 2px solid rgba(199, 154, 27, 0.3);">Service</th>
+                                <th style="padding: 16px; text-align: left; color: var(--gold-bright); border-bottom: 2px solid rgba(199, 154, 27, 0.3);">Rate</th>
+                                <th style="padding: 16px; text-align: left; color: var(--gold-bright); border-bottom: 2px solid rgba(199, 154, 27, 0.3);">Details</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom: 1px solid rgba(199, 154, 27, 0.1);">
+                                <td style="padding: 16px; color: var(--text-primary);">Professional Typing</td>
+                                <td style="padding: 16px; color: var(--gold-bright); font-weight: bold;">₹2-3/word</td>
+                                <td style="padding: 16px; color: var(--text-muted); font-size: 14px;">English & Hindi, 99% accuracy, Min 500 words</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid rgba(199, 154, 27, 0.1);">
+                                <td style="padding: 16px; color: var(--text-primary);">Document Formatting</td>
+                                <td style="padding: 16px; color: var(--gold-bright); font-weight: bold;">₹500-1000</td>
+                                <td style="padding: 16px; color: var(--text-muted); font-size: 14px;">Per document up to 20 pages with headers/footers</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 16px; color: var(--text-primary);">PDF Conversion & Cleanup</td>
+                                <td style="padding: 16px; color: var(--gold-bright); font-weight: bold;">₹100-300</td>
+                                <td style="padding: 16px; color: var(--text-muted); font-size: 14px;">Per page or per document depending on complexity</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- School & Institute -->
+            <div style="margin-bottom: 48px;">
+                <h2 style="font-size: 32px; color: var(--gold-bright); margin-bottom: 24px;">🎓 School & Institute Services</h2>
+                <div style="background: rgba(17, 17, 17, 0.6); border-radius: 12px; overflow: hidden;">
+                    <table style="width: 100%; border-collapse: collapse;">
+                        <thead>
+                            <tr style="background: rgba(199, 154, 27, 0.15);">
+                                <th style="padding: 16px; text-align: left; color: var(--gold-bright); border-bottom: 2px solid rgba(199, 154, 27, 0.3);">Service</th>
+                                <th style="padding: 16px; text-align: left; color: var(--gold-bright); border-bottom: 2px solid rgba(199, 154, 27, 0.3);">Rate</th>
+                                <th style="padding: 16px; text-align: left; color: var(--gold-bright); border-bottom: 2px solid rgba(199, 154, 27, 0.3);">Details</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom: 1px solid rgba(199, 154, 27, 0.1);">
+                                <td style="padding: 16px; color: var(--text-primary);">Timetable Creation</td>
+                                <td style="padding: 16px; color: var(--gold-bright); font-weight: bold;">₹500-1000</td>
+                                <td style="padding: 16px; color: var(--text-muted); font-size: 14px;">Per timetable with professional formatting</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid rgba(199, 154, 27, 0.1);">
+                                <td style="padding: 16px; color: var(--text-primary);">Attendance Sheets</td>
+                                <td style="padding: 16px; color: var(--gold-bright); font-weight: bold;">₹300-500</td>
+                                <td style="padding: 16px; color: var(--text-muted); font-size: 14px;">Monthly sheets with automated calculations</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid rgba(199, 154, 27, 0.1);">
+                                <td style="padding: 16px; color: var(--text-primary);">Exam Papers & Formatting</td>
+                                <td style="padding: 16px; color: var(--gold-bright); font-weight: bold;">₹5-7/page</td>
+                                <td style="padding: 16px; color: var(--text-muted); font-size: 14px;">Professional formatting for question papers</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 16px; color: var(--text-primary);">Certificates & Documents</td>
+                                <td style="padding: 16px; color: var(--gold-bright); font-weight: bold;">₹200-400</td>
+                                <td style="padding: 16px; color: var(--text-muted); font-size: 14px;">Per certificate or document with design</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Creator Services -->
+            <div style="margin-bottom: 48px;">
+                <h2 style="font-size: 32px; color: var(--gold-bright); margin-bottom: 24px;">🎬 Creator Services</h2>
+                <div style="background: rgba(17, 17, 17, 0.6); border-radius: 12px; overflow: hidden;">
+                    <table style="width: 100%; border-collapse: collapse;">
+                        <thead>
+                            <tr style="background: rgba(199, 154, 27, 0.15);">
+                                <th style="padding: 16px; text-align: left; color: var(--gold-bright); border-bottom: 2px solid rgba(199, 154, 27, 0.3);">Service</th>
+                                <th style="padding: 16px; text-align: left; color: var(--gold-bright); border-bottom: 2px solid rgba(199, 154, 27, 0.3);">Rate</th>
+                                <th style="padding: 16px; text-align: left; color: var(--gold-bright); border-bottom: 2px solid rgba(199, 154, 27, 0.3);">Details</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom: 1px solid rgba(199, 154, 27, 0.1);">
+                                <td style="padding: 16px; color: var(--text-primary);">Video Editing</td>
+                                <td style="padding: 16px; color: var(--gold-bright); font-weight: bold;">₹500-2000</td>
+                                <td style="padding: 16px; color: var(--text-muted); font-size: 14px;">Per minute with cuts, transitions, effects</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid rgba(199, 154, 27, 0.1);">
+                                <td style="padding: 16px; color: var(--text-primary);">Audio Cleanup</td>
+                                <td style="padding: 16px; color: var(--gold-bright); font-weight: bold;">₹200-500</td>
+                                <td style="padding: 16px; color: var(--text-muted); font-size: 14px;">Per minute of audio with noise removal</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid rgba(199, 154, 27, 0.1);">
+                                <td style="padding: 16px; color: var(--text-primary);">Script Writing</td>
+                                <td style="padding: 16px; color: var(--gold-bright); font-weight: bold;">₹2-5</td>
+                                <td style="padding: 16px; color: var(--text-muted); font-size: 14px;">Per word with SEO optimization</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 16px; color: var(--text-primary);">Content Repurposing</td>
+                                <td style="padding: 16px; color: var(--gold-bright); font-weight: bold;">₹1000-2000</td>
+                                <td style="padding: 16px; color: var(--text-muted); font-size: 14px;">Per project into multiple formats</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Monthly Packages -->
+            <div>
+                <h2 style="font-size: 32px; color: var(--gold-bright); margin-bottom: 24px;">📆 Monthly Support Packages</h2>
+                <div style="background: rgba(17, 17, 17, 0.6); border-radius: 12px; overflow: hidden;">
+                    <table style="width: 100%; border-collapse: collapse;">
+                        <thead>
+                            <tr style="background: rgba(199, 154, 27, 0.15);">
+                                <th style="padding: 16px; text-align: left; color: var(--gold-bright); border-bottom: 2px solid rgba(199, 154, 27, 0.3);">Package</th>
+                                <th style="padding: 16px; text-align: left; color: var(--gold-bright); border-bottom: 2px solid rgba(199, 154, 27, 0.3);">Price</th>
+                                <th style="padding: 16px; text-align: left; color: var(--gold-bright); border-bottom: 2px solid rgba(199, 154, 27, 0.3);">What's Included</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom: 1px solid rgba(199, 154, 27, 0.1);">
+                                <td style="padding: 16px; color: var(--text-primary);">School Monthly</td>
+                                <td style="padding: 16px; color: var(--gold-bright); font-weight: bold;">₹5,000-15,000</td>
+                                <td style="padding: 16px; color: var(--text-muted); font-size: 14px;">Unlimited timetables, sheets, docs, priority support</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 16px; color: var(--text-primary);">Creator Monthly</td>
+                                <td style="padding: 16px; color: var(--gold-bright); font-weight: bold;">₹15,000-40,000</td>
+                                <td style="padding: 16px; color: var(--text-muted); font-size: 14px;">Unlimited video editing, scripts, repurposing</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA SECTION ===== -->
+    <section style="padding: 60px 20px; background: rgba(199, 154, 27, 0.05); text-align: center;">
+        <div class="container">
+            <h2 style="font-size: 36px; color: var(--gold-bright); margin-bottom: 16px;">Need a Custom Quote?</h2>
+            <p style="font-size: 16px; color: var(--text-muted); margin-bottom: 32px;">Combine services or get special pricing for your unique needs.</p>
+            <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                <a href="custom-quote.html" class="btn btn--primary btn--lg" style="text-decoration: none;">
+                    Get Custom Quote
+                </a>
+                <a href="bulk-deals.html" class="btn btn--secondary btn--lg" style="text-decoration: none;">
+                    View Bulk Deals
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer style="background: rgba(17, 17, 17, 0.8); border-top: 1px solid rgba(199, 154, 27, 0.2); padding: 40px 20px; text-align: center; margin-top: 60px;">
+        <div class="container">
+            <p style="color: var(--text-muted); font-size: 14px;">© 2024 QuickServe IT. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../app.js"></script>
+</body>
+</html>
