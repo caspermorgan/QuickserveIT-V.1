@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - QuickServe IT</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="header-container">
+            <a href="../index.html" class="logo">
+                <span class="logo-text">⚡ QuickServe IT</span>
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="../index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="langSwitch" class="btn btn--secondary btn--sm">हिंदी</button>
+                <button id="themeToggle" class="btn btn--secondary btn--sm">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== BREADCRUMB ===== -->
+    <section style="padding-top: 100px; padding-bottom: 20px;">
+        <div class="container">
+            <nav style="font-size: 14px; color: var(--text-muted);">
+                <a href="../index.html" style="color: var(--gold-primary);">Home</a> 
+                <span> / </span>
+                <span style="color: var(--text-primary);">About</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section style="padding: 60px 20px; text-align: center;">
+        <div class="container">
+            <h1 style="font-size: 48px; color: var(--gold-bright); margin-bottom: 16px;">🌟 About QuickServe IT</h1>
+            <p style="font-size: 18px; color: var(--text-muted); max-width: 700px; margin: 0 auto;">
+                Learn about our story, team, mission, and what makes us different. We're passionate about quality, speed, and client success.
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT NAVIGATION TABS ===== -->
+    <section style="padding: 40px 20px; background: rgba(199, 154, 27, 0.05);">
+        <div class="container">
+            <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 40px;">
+                <a href="index.html" class="btn btn--primary" style="text-decoration: none;">
+                    About Overview
+                </a>
+                <a href="founder-story.html" class="btn btn--secondary" style="text-decoration: none;">
+                    Founder Story
+                </a>
+                <a href="team.html" class="btn btn--secondary" style="text-decoration: none;">
+                    Our Team
+                </a>
+                <a href="vision-mission.html" class="btn btn--secondary" style="text-decoration: none;">
+                    Vision & Mission
+                </a>
+                <a href="why-different.html" class="btn btn--secondary" style="text-decoration: none;">
+                    Why Different
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== QUICK STATS ===== -->
+    <section style="padding: 60px 20px;">
+        <div class="container">
+            <h2 style="font-size: 36px; color: var(--gold-bright); margin-bottom: 48px; text-align: center;">By The Numbers</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px;">
+                <div style="text-align: center;">
+                    <p style="color: var(--gold-bright); font-size: 48px; font-weight: bold; margin-bottom: 8px;">500+</p>
+                    <p style="color: var(--text-muted); font-size: 14px;">Projects Completed</p>
+                </div>
+                <div style="text-align: center;">
+                    <p style="color: var(--gold-bright); font-size: 48px; font-weight: bold; margin-bottom: 8px;">99%</p>
+                    <p style="color: var(--text-muted); font-size: 14px;">Accuracy Rate</p>
+                </div>
+                <div style="text-align: center;">
+                    <p style="color: var(--gold-bright); font-size: 48px; font-weight: bold; margin-bottom: 8px;">100%</p>
+                    <p style="color: var(--text-muted); font-size: 14px;">Client Satisfaction</p>
+                </div>
+                <div style="text-align: center;">
+                    <p style="color: var(--gold-bright); font-size: 48px; font-weight: bold; margin-bottom: 8px;">24hrs</p>
+                    <p style="color: var(--text-muted); font-size: 14px;">Average Turnaround</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT SECTIONS OVERVIEW ===== -->
+    <section style="padding: 60px 20px; background: rgba(199, 154, 27, 0.05);">
+        <div class="container">
+            <h2 style="font-size: 36px; color: var(--gold-bright); margin-bottom: 48px; text-align: center;">Explore Our Story</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px;">
+                <!-- Founder Story -->
+                <a href="founder-story.html" style="text-decoration: none;">
+                    <div style="background: linear-gradient(135deg, rgba(199, 154, 27, 0.15), rgba(212, 175, 55, 0.08)); border: 1px solid rgba(199, 154, 27, 0.3); border-radius: 12px; padding: 32px; text-align: center; transition: all 0.3s ease;">
+                        <div style="font-size: 48px; margin-bottom: 16px;">👤</div>
+                        <h3 style="color: var(--text-primary); font-size: 22px; margin-bottom: 12px;">Founder Story</h3>
+                        <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6; margin-bottom: 16px;">
+                            Learn how QuickServe IT was founded and the journey that led us here. Our founder's passion for quality and innovation.
+                        </p>
+                        <div style="color: var(--gold-bright); font-weight: 600;">Read Story →</div>
+                    </div>
+                </a>
+
+                <!-- Team -->
+                <a href="team.html" style="text-decoration: none;">
+                    <div style="background: linear-gradient(135deg, rgba(199, 154, 27, 0.15), rgba(212, 175, 55, 0.08)); border: 1px solid rgba(199, 154, 27, 0.3); border-radius: 12px; padding: 32px; text-align: center; transition: all 0.3s ease;">
+                        <div style="font-size: 48px; margin-bottom: 16px;">👥</div>
+                        <h3 style="color: var(--text-primary); font-size: 22px; margin-bottom: 12px;">Our Team</h3>
+                        <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6; margin-bottom: 16px;">
+                            Meet the talented professionals behind QuickServe IT. Skilled editors, typists, and creative minds dedicated to excellence.
+                        </p>
+                        <div style="color: var(--gold-bright); font-weight: 600;">Meet Team →</div>
+                    </div>
+                </a>
+
+                <!-- Vision & Mission -->
+                <a href="vision-mission.html" style="text-decoration: none;">
+                    <div style="background: linear-gradient(135deg, rgba(199, 154, 27, 0.15), rgba(212, 175, 55, 0.08)); border: 1px solid rgba(199, 154, 27, 0.3); border-radius: 12px; padding: 32px; text-align: center; transition: all 0.3s ease;">
+                        <div style="font-size: 48px; margin-bottom: 16px;">🎯</div>
+                        <h3 style="color: var(--text-primary); font-size: 22px; margin-bottom: 12px;">Vision & Mission</h3>
+                        <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6; margin-bottom: 16px;">
+                            Our vision for the future and mission to help businesses succeed. What drives us every day and what we aim to achieve.
+                        </p>
+                        <div style="color: var(--gold-bright); font-weight: 600;">Our Vision →</div>
+                    </div>
+                </a>
+
+                <!-- Why Different -->
+                <a href="why-different.html" style="text-decoration: none;">
+                    <div style="background: linear-gradient(135deg, rgba(199, 154, 27, 0.15), rgba(212, 175, 55, 0.08)); border: 1px solid rgba(199, 154, 27, 0.3); border-radius: 12px; padding: 32px; text-align: center; transition: all 0.3s ease;">
+                        <div style="font-size: 48px; margin-bottom: 16px;">✨</div>
+                        <h3 style="color: var(--text-primary); font-size: 22px; margin-bottom: 12px;">Why Different</h3>
+                        <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6; margin-bottom: 16px;">
+                            What sets QuickServe IT apart from others. Our unique approach, values, and commitment to excellence and innovation.
+                        </p>
+                        <div style="color: var(--gold-bright); font-weight: 600;">Learn More →</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== VALUES ===== -->
+    <section style="padding: 60px 20px;">
+        <div class="container">
+            <h2 style="font-size: 36px; color: var(--gold-bright); margin-bottom: 48px; text-align: center;">Our Core Values</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px;">
+                <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; padding: 28px;">
+                    <h3 style="color: var(--gold-bright); font-size: 20px; margin-bottom: 12px;">💎 Quality First</h3>
+                    <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6;">
+                        Every project receives our best effort. We never compromise on quality, even under tight deadlines.
+                    </p>
+                </div>
+
+                <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; padding: 28px;">
+                    <h3 style="color: var(--gold-bright); font-size: 20px; margin-bottom: 12px;">⚡ Speed & Efficiency</h3>
+                    <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6;">
+                        Fast turnaround without sacrificing quality. We work efficiently to deliver your project on time.
+                    </p>
+                </div>
+
+                <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; padding: 28px;">
+                    <h3 style="color: var(--gold-bright); font-size: 20px; margin-bottom: 12px;">🤝 Client Focused</h3>
+                    <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6;">
+                        Your success is our success. We listen to your needs and deliver solutions that matter.
+                    </p>
+                </div>
+
+                <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; padding: 28px;">
+                    <h3 style="color: var(--gold-bright); font-size: 20px; margin-bottom: 12px;">🎯 Innovation</h3>
+                    <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6;">
+                        We constantly improve and adapt. New tools, better methods, and creative solutions drive us forward.
+                    </p>
+                </div>
+
+                <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; padding: 28px;">
+                    <h3 style="color: var(--gold-bright); font-size: 20px; margin-bottom: 12px;">💼 Professionalism</h3>
+                    <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6;">
+                        Professional conduct in every interaction. Transparent, honest, and reliable in all dealings.
+                    </p>
+                </div>
+
+                <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; padding: 28px;">
+                    <h3 style="color: var(--gold-bright); font-size: 20px; margin-bottom: 12px;">🌱 Growth Mindset</h3>
+                    <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6;">
+                        We learn, improve, and evolve. Your feedback helps us grow and serve you better every day.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TIMELINE ===== -->
+    <section style="padding: 60px 20px; background: rgba(199, 154, 27, 0.05);">
+        <div class="container">
+            <h2 style="font-size: 36px; color: var(--gold-bright); margin-bottom: 48px; text-align: center;">Our Journey</h2>
+            
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div style="display: flex; gap: 24px; margin-bottom: 32px; align-items: flex-start;">
+                    <div style="min-width: 120px;">
+                        <p style="color: var(--gold-bright); font-size: 18px; font-weight: bold; margin: 0;">2022</p>
+                        <p style="color: var(--text-muted); font-size: 12px; margin-top: 4px;">Founded</p>
+                    </div>
+                    <div style="border-left: 2px solid rgba(199, 154, 27, 0.3); padding-left: 24px; padding-top: 4px;">
+                        <h4 style="color: var(--text-primary); margin-bottom: 8px;">QuickServe IT Launched</h4>
+                        <p style="color: var(--text-muted); font-size: 14px;">Started with a mission to provide fast, quality digital services to schools, creators, and businesses.</p>
+                    </div>
+                </div>
+
+                <div style="display: flex; gap: 24px; margin-bottom: 32px; align-items: flex-start;">
+                    <div style="min-width: 120px;">
+                        <p style="color: var(--gold-bright); font-size: 18px; font-weight: bold; margin: 0;">2023</p>
+                        <p style="color: var(--text-muted); font-size: 12px; margin-top: 4px;">Growth</p>
+                    </div>
+                    <div style="border-left: 2px solid rgba(199, 154, 27, 0.3); padding-left: 24px; padding-top: 4px;">
+                        <h4 style="color: var(--text-primary); margin-bottom: 8px;">Expanded Services</h4>
+                        <p style="color: var(--text-muted); font-size: 14px;">Added video editing, expanded typing services, and launched monthly support packages for schools and creators.</p>
+                    </div>
+                </div>
+
+                <div style="display: flex; gap: 24px; margin-bottom: 32px; align-items: flex-start;">
+                    <div style="min-width: 120px;">
+                        <p style="color: var(--gold-bright); font-size: 18px; font-weight: bold; margin: 0;">2024</p>
+                        <p style="color: var(--text-muted); font-size: 12px; margin-top: 4px;">Achievement</p>
+                    </div>
+                    <div style="border-left: 2px solid rgba(199, 154, 27, 0.3); padding-left: 24px; padding-top: 4px;">
+                        <h4 style="color: var(--text-primary); margin-bottom: 8px;">500+ Projects Milestone</h4>
+                        <p style="color: var(--text-muted); font-size: 14px;">Crossed 500 successful projects with 99% accuracy and 100% client satisfaction. Established as trusted partner.</p>
+                    </div>
+                </div>
+
+                <div style="display: flex; gap: 24px; align-items: flex-start;">
+                    <div style="min-width: 120px;">
+                        <p style="color: var(--gold-bright); font-size: 18px; font-weight: bold; margin: 0;">2025</p>
+                        <p style="color: var(--text-muted); font-size: 12px; margin-top: 4px;">Vision</p>
+                    </div>
+                    <div style="border-left: 2px solid rgba(199, 154, 27, 0.3); padding-left: 24px; padding-top: 4px;">
+                        <h4 style="color: var(--text-primary); margin-bottom: 8px;">Expanding Globally</h4>
+                        <p style="color: var(--text-muted); font-size: 14px;">Aiming to become India's most trusted digital services provider. New markets, new services, same quality promise.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA SECTION ===== -->
+    <section style="padding: 60px 20px; text-align: center;">
+        <div class="container">
+            <h2 style="font-size: 36px; color: var(--gold-bright); margin-bottom: 16px;">Part of Our Story?</h2>
+            <p style="font-size: 16px; color: var(--text-muted); margin-bottom: 32px;">Let's work together and create something amazing.</p>
+            <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                <a href="../index.html#contact" class="btn btn--primary btn--lg" style="text-decoration: none;">
+                    Get Started
+                </a>
+                <a href="founder-story.html" class="btn btn--secondary btn--lg" style="text-decoration: none;">
+                    Learn More
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer style="background: rgba(17, 17, 17, 0.8); border-top: 1px solid rgba(199, 154, 27, 0.2); padding: 40px 20px; text-align: center; margin-top: 60px;">
+        <div class="container">
+            <p style="color: var(--text-muted); font-size: 14px;">© 2024 QuickServe IT. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../app.js"></script>
+</body>
+</html>
