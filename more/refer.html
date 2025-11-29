@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refer & Earn - QuickServe IT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">⚡ QuickServe IT</span>
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="refer.html" class="nav-link">Refer & Earn</a></li>
+                    <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="langSwitch" class="btn btn--secondary btn--sm">हिंदी</button>
+                <button id="themeToggle" class="btn btn--secondary btn--sm">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== BREADCRUMB ===== -->
+    <section style="padding-top: 100px; padding-bottom: 20px;">
+        <div class="container">
+            <nav style="font-size: 14px; color: var(--text-muted);">
+                <a href="index.html" style="color: var(--gold-primary);">Home</a> 
+                <span> / </span>
+                <span style="color: var(--text-primary);">Refer & Earn</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section style="padding: 60px 20px; text-align: center;">
+        <div class="container">
+            <h1 style="font-size: 48px; color: var(--gold-bright); margin-bottom: 16px;">💰 Refer & Earn</h1>
+            <p style="font-size: 18px; color: var(--text-muted); max-width: 700px; margin: 0 auto;">
+                Share QuickServe IT with friends and earn generous commissions. Easy, transparent, and rewarding.
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== HOW IT WORKS ===== -->
+    <section style="padding: 60px 20px;">
+        <div class="container">
+            <h2 style="font-size: 36px; color: var(--gold-bright); margin-bottom: 48px; text-align: center;">How It Works</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; margin-bottom: 60px;">
+                <!-- Step 1 -->
+                <div style="text-align: center;">
+                    <div style="background: rgba(199, 154, 27, 0.15); width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; font-size: 32px;">
+                        👤
+                    </div>
+                    <h3 style="color: var(--gold-bright); font-size: 20px; margin-bottom: 12px;">Step 1: Sign Up</h3>
+                    <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6;">
+                        Contact us and get your unique referral link. It's completely free and takes just 5 minutes.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div style="text-align: center;">
+                    <div style="background: rgba(199, 154, 27, 0.15); width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; font-size: 32px;">
+                        🔗
+                    </div>
+                    <h3 style="color: var(--gold-bright); font-size: 20px; margin-bottom: 12px;">Step 2: Share Link</h3>
+                    <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6;">
+                        Share your referral link with friends, family, or social media. Anyone who clicks and purchases is tracked.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div style="text-align: center;">
+                    <div style="background: rgba(199, 154, 27, 0.15); width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; font-size: 32px;">
+                        ✅
+                    </div>
+                    <h3 style="color: var(--gold-bright); font-size: 20px; margin-bottom: 12px;">Step 3: Earn</h3>
+                    <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6;">
+                        Get 15% commission on every referral's first project. Lifetime commissions on monthly packages!
+                    </p>
+                </div>
+
+                <!-- Step 4 -->
+                <div style="text-align: center;">
+                    <div style="background: rgba(199, 154, 27, 0.15); width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; font-size: 32px;">
+                        💳
+                    </div>
+                    <h3 style="color: var(--gold-bright); font-size: 20px; margin-bottom: 12px;">Step 4: Get Paid</h3>
+                    <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6;">
+                        Earnings are calculated monthly and paid to your account. Minimum payout: ₹500.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Commission Structure -->
+            <div style="background: rgba(199, 154, 27, 0.05); border: 2px solid rgba(199, 154, 27, 0.2); border-radius: 12px; padding: 40px;">
+                <h3 style="color: var(--gold-bright); font-size: 28px; margin-bottom: 32px; text-align: center;">Commission Structure</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px;">
+                    <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; padding: 24px; text-align: center;">
+                        <p style="color: var(--gold-bright); font-size: 32px; font-weight: bold; margin-bottom: 8px;">15%</p>
+                        <p style="color: var(--text-primary); font-weight: 600; margin-bottom: 8px;">One-Time Projects</p>
+                        <p style="color: var(--text-muted); font-size: 13px;">On every single project your referral completes</p>
+                    </div>
+                    <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; padding: 24px; text-align: center;">
+                        <p style="color: var(--gold-bright); font-size: 32px; font-weight: bold; margin-bottom: 8px;">20%</p>
+                        <p style="color: var(--text-primary); font-weight: 600; margin-bottom: 8px;">Monthly Packages</p>
+                        <p style="color: var(--text-muted); font-size: 13px;">Recurring commission every month they stay</p>
+                    </div>
+                    <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; padding: 24px; text-align: center;">
+                        <p style="color: var(--gold-bright); font-size: 32px; font-weight: bold; margin-bottom: 8px;">25%</p>
+                        <p style="color: var(--text-primary); font-weight: 600; margin-bottom: 8px;">Enterprise Deals</p>
+                        <p style="color: var(--text-muted); font-size: 13px;">For bulk orders and enterprise clients</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== BENEFITS ===== -->
+    <section style="padding: 60px 20px; background: rgba(199, 154, 27, 0.05);">
+        <div class="container">
+            <h2 style="font-size: 36px; color: var(--gold-bright); margin-bottom: 48px; text-align: center;">Why Refer QuickServe IT?</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px;">
+                <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; padding: 28px;">
+                    <h3 style="color: var(--gold-bright); font-size: 20px; margin-bottom: 12px;">✓ Generous Commissions</h3>
+                    <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6;">
+                        Industry-leading 15-25% commissions. More than others in the market.
+                    </p>
+                </div>
+
+                <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; padding: 28px;">
+                    <h3 style="color: var(--gold-bright); font-size: 20px; margin-bottom: 12px;">✓ Lifetime Earnings</h3>
+                    <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6;">
+                        Monthly packages = recurring commissions. Earn every month as long as they stay.
+                    </p>
+                </div>
+
+                <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; padding: 28px;">
+                    <h3 style="color: var(--gold-bright); font-size: 20px; margin-bottom: 12px;">✓ Easy Tracking</h3>
+                    <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6;">
+                        Dashboard shows all referrals and earnings in real-time. Complete transparency.
+                    </p>
+                </div>
+
+                <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; padding: 28px;">
+                    <h3 style="color: var(--gold-bright); font-size: 20px; margin-bottom: 12px;">✓ Fast Payouts</h3>
+                    <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6;">
+                        Monthly payments to your account. Minimum ₹500. No delays, no hassles.
+                    </p>
+                </div>
+
+                <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; padding: 28px;">
+                    <h3 style="color: var(--gold-bright); font-size: 20px; margin-bottom: 12px;">✓ Marketing Materials</h3>
+                    <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6;">
+                        We provide banners, descriptions, and materials to help you promote.
+                    </p>
+                </div>
+
+                <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; padding: 28px;">
+                    <h3 style="color: var(--gold-bright); font-size: 20px; margin-bottom: 12px;">✓ Dedicated Support</h3>
+                    <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6;">
+                        Dedicated account manager to help you maximize referrals and earnings.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TERMS ===== -->
+    <section style="padding: 60px 20px;">
+        <div class="container" style="max-width: 800px;">
+            <h2 style="font-size: 32px; color: var(--gold-bright); margin-bottom: 32px; text-align: center;">Terms & Conditions</h2>
+            
+            <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; padding: 28px;">
+                <ul style="color: var(--text-muted); font-size: 14px; line-height: 1.8;">
+                    <li>✓ Commission paid monthly on completed projects</li>
+                    <li>✓ Minimum payout: ₹500</li>
+                    <li>✓ Referrals must sign up using your unique link</li>
+                    <li>✓ Payment within 7 days of month-end</li>
+                    <li>✓ Fraud or fake referrals result in disqualification</li>
+                    <li>✓ Monthly packages provide recurring commissions</li>
+                    <li>✓ You can refer unlimited people</li>
+                    <li>✓ Program can be modified with 30 days notice</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA SECTION ===== -->
+    <section style="padding: 60px 20px; background: rgba(199, 154, 27, 0.05); text-align: center;">
+        <div class="container">
+            <h2 style="font-size: 36px; color: var(--gold-bright); margin-bottom: 16px;">Start Earning Today</h2>
+            <p style="font-size: 16px; color: var(--text-muted); margin-bottom: 32px;">Join our referral program and earn passive income. It's free and easy!</p>
+            <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                <a href="index.html#contact" class="btn btn--primary btn--lg" style="text-decoration: none;">
+                    Join Now
+                </a>
+                <a href="index.html" class="btn btn--secondary btn--lg" style="text-decoration: none;">
+                    Back to Home
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer style="background: rgba(17, 17, 17, 0.8); border-top: 1px solid rgba(199, 154, 27, 0.2); padding: 40px 20px; text-align: center; margin-top: 60px;">
+        <div class="container">
+            <p style="color: var(--text-muted); font-size: 14px;">© 2024 QuickServe IT. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
