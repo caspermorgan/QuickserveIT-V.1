@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Samples - QuickServe IT Portfolio</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="header-container">
+            <a href="../index.html" class="logo">
+                <span class="logo-text">⚡ QuickServe IT</span>
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Portfolio</a></li>
+                    <li class="nav-item"><a href="../index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="langSwitch" class="btn btn--secondary btn--sm">हिंदी</button>
+                <button id="themeToggle" class="btn btn--secondary btn--sm">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== BREADCRUMB ===== -->
+    <section style="padding-top: 100px; padding-bottom: 20px;">
+        <div class="container">
+            <nav style="font-size: 14px; color: var(--text-muted);">
+                <a href="../index.html" style="color: var(--gold-primary);">Home</a> 
+                <span> / </span>
+                <a href="index.html" style="color: var(--gold-primary);">Portfolio</a> 
+                <span> / </span>
+                <span style="color: var(--text-primary);">Typing Samples</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- ===== PORTFOLIO NAVIGATION TABS ===== -->
+    <section style="padding: 40px 20px; background: rgba(199, 154, 27, 0.05);">
+        <div class="container">
+            <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 40px;">
+                <a href="index.html" class="btn btn--secondary" style="text-decoration: none;">All Portfolio</a>
+                <a href="video-work.html" class="btn btn--secondary" style="text-decoration: none;">Video Work</a>
+                <a href="typing-samples.html" class="btn btn--primary" style="text-decoration: none;">Typing Samples</a>
+                <a href="school-documents.html" class="btn btn--secondary" style="text-decoration: none;">School Documents</a>
+                <a href="before-after.html" class="btn btn--secondary" style="text-decoration: none;">Before & After</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section style="padding: 60px 20px; text-align: center;">
+        <div class="container">
+            <h1 style="font-size: 48px; color: var(--gold-bright); margin-bottom: 16px;">📝 Typing Samples</h1>
+            <p style="font-size: 18px; color: var(--text-muted); max-width: 700px; margin: 0 auto;">
+                99% accurate English and Hindi typing. Professional formatting, clean output, error-free documents ready for submission.
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== SAMPLES ===== -->
+    <section style="padding: 60px 20px;">
+        <div class="container">
+            <h2 style="font-size: 32px; color: var(--gold-bright); margin-bottom: 32px;">Professional Typing Examples</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px;">
+                <!-- Sample 1 -->
+                <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; padding: 28px;">
+                    <h3 style="color: var(--text-primary); font-size: 20px; margin-bottom: 12px;">📄 Business Letter</h3>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 8px;"><strong>Type:</strong> Professional correspondence</p>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 8px;"><strong>Length:</strong> 500 words</p>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 8px;"><strong>Accuracy:</strong> 99.8%</p>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 16px;"><strong>Status:</strong> Ready for submission</p>
+                    <p style="color: var(--text-muted); font-size: 13px; line-height: 1.6;">Professionally formatted with proper date, recipient details, salutation, body, and closing. No errors found.</p>
+                </div>
+
+                <!-- Sample 2 -->
+                <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; padding: 28px;">
+                    <h3 style="color: var(--text-primary); font-size: 20px; margin-bottom: 12px;">📚 Research Paper</h3>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 8px;"><strong>Type:</strong> Academic document</p>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 8px;"><strong>Length:</strong> 8,500 words</p>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 8px;"><strong>Accuracy:</strong> 99.9%</p>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 16px;"><strong>Status:</strong> Publication ready</p>
+                    <p style="color: var(--text-muted); font-size: 13px; line-height: 1.6;">Formatted with proper headers, citations, bibliography. Consistent formatting throughout. Zero grammatical errors.</p>
+                </div>
+
+                <!-- Sample 3 -->
+                <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; padding: 28px;">
+                    <h3 style="color: var(--text-primary); font-size: 20px; margin-bottom: 12px;">📋 Hindi Document</h3>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 8px;"><strong>Type:</strong> [translate:हिंदी] Hindi content</p>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 8px;"><strong>Length:</strong> 3,200 words</p>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 8px;"><strong>Accuracy:</strong> 99%</p>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 16px;"><strong>Status:</strong> Complete with formatting</p>
+                    <p style="color: var(--text-muted); font-size: 13px; line-height: 1.6;">Professional [translate:हिंदी] Hindi typing with proper grammar, diacritics, and formatting. Bilingual expertise.</p>
+                </div>
+
+                <!-- Sample 4 -->
+                <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; padding: 28px;">
+                    <h3 style="color: var(--text-primary); font-size: 20px; margin-bottom: 12px;">💼 Report with Tables</h3>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 8px;"><strong>Type:</strong> Business report</p>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 8px;"><strong>Length:</strong> 4,000 words + 5 tables</p>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 8px;"><strong>Accuracy:</strong> 99.7%</p>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 16px;"><strong>Status:</strong> Executive ready</p>
+                    <p style="color: var(--text-muted); font-size: 13px; line-height: 1.6;">Professional formatting with data tables, charts references, and executive summary. No data entry errors.</p>
+                </div>
+
+                <!-- Sample 5 -->
+                <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; padding: 28px;">
+                    <h3 style="color: var(--text-primary); font-size: 20px; margin-bottom: 12px;">📖 Book Chapter</h3>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 8px;"><strong>Type:</strong> Publishing content</p>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 8px;"><strong>Length:</strong> 12,000 words</p>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 8px;"><strong>Accuracy:</strong> 99.9%</p>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 16px;"><strong>Status:</strong> Publisher approved</p>
+                    <p style="color: var(--text-muted); font-size: 13px; line-height: 1.6;">Professional book chapter with footnotes, citations, consistent style guide adherence. Publication quality.</p>
+                </div>
+
+                <!-- Sample 6 -->
+                <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; padding: 28px;">
+                    <h3 style="color: var(--text-primary); font-size: 20px; margin-bottom: 12px;">🔄 Bulk Project</h3>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 8px;"><strong>Type:</strong> Large project</p>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 8px;"><strong>Length:</strong> 25,000 words</p>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 8px;"><strong>Accuracy:</strong> 99%</p>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 16px;"><strong>Status:</strong> Bulk discount applied</p>
+                    <p style="color: var(--text-muted); font-size: 13px; line-height: 1.6;">Large project with 15% bulk discount. Consistent quality across all pages. Fast turnaround maintained.</p>
+                </div>
+            </div>
+
+            <!-- Why Quality Matters -->
+            <div style="background: rgba(199, 154, 27, 0.05); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; padding: 32px; margin-top: 60px;">
+                <h3 style="color: var(--gold-bright); font-size: 24px; margin-bottom: 24px;">Our Quality Process</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px;">
+                    <div>
+                        <h4 style="color: var(--text-primary); margin-bottom: 8px;">✓ Double Check</h4>
+                        <p style="color: var(--text-muted); font-size: 14px;">Every document checked twice for errors before delivery.</p>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--text-primary); margin-bottom: 8px;">✓ Professional Formatting</h4>
+                        <p style="color: var(--text-muted); font-size: 14px;">Proper spacing, fonts, headers, footers, and layouts.</p>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--text-primary); margin-bottom: 8px;">✓ Bilingual Expertise</h4>
+                        <p style="color: var(--text-muted); font-size: 14px;">English and Hindi with proper grammar and diacritics.</p>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--text-primary); margin-bottom: 8px;">✓ Fast Delivery</h4>
+                        <p style="color: var(--text-muted); font-size: 14px;">₹2-3/word standard rate. Quick turnaround guaranteed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA SECTION ===== -->
+    <section style="padding: 60px 20px; background: rgba(199, 154, 27, 0.05); text-align: center;">
+        <div class="container">
+            <h2 style="font-size: 36px; color: var(--gold-bright); margin-bottom: 16px;">Need Professional Typing?</h2>
+            <p style="font-size: 16px; color: var(--text-muted); margin-bottom: 32px;">Get your documents typed with 99% accuracy at ₹2-3 per word.</p>
+            <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                <a href="../index.html#contact" class="btn btn--primary btn--lg" style="text-decoration: none;">
+                    Get Quote
+                </a>
+                <a href="index.html" class="btn btn--secondary btn--lg" style="text-decoration: none;">
+                    View More Portfolio
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer style="background: rgba(17, 17, 17, 0.8); border-top: 1px solid rgba(199, 154, 27, 0.2); padding: 40px 20px; text-align: center; margin-top: 60px;">
+        <div class="container">
+            <p style="color: var(--text-muted); font-size: 14px;">© 2024 QuickServe IT. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../app.js"></script>
+</body>
+</html>
