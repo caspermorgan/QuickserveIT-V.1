@@ -1,0 +1,741 @@
+
+<!DOCTYPE html>
+<html lang="en" data-lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuickServe IT - Professional Digital Services</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23D4AF37'><circle cx='12' cy='12' r='10'/></svg>">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    /* ===== CSS VARIABLES (UNIFIED THEMING) ===== */
+    :root {
+      --bg-main: #0B0B0B;
+      --bg-elevated: #111111;
+      --bg-surface-hover: #1a1a1a;
+      --text-primary: #E0E0E0;
+      --text-muted: #888888;
+      --gold-primary: #C79A1B;
+      --gold-bright: #D4AF37;
+      --border-subtle: rgba(199, 154, 27, 0.25);
+      --shadow-soft: 0 8px 32px rgba(0, 0, 0, 0.4);
+      --transition-fast: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+      --transition-smooth: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    :root[data-theme="light"] {
+      --bg-main: #FAFAFA;
+      --bg-elevated: #FFFFFF;
+      --bg-surface-hover: #F5F5F5;
+      --text-primary: #1a1a1a;
+      --text-muted: #666666;
+      --border-subtle: rgba(0, 0, 0, 0.1);
+      --shadow-soft: 0 8px 32px rgba(0, 0, 0, 0.08);
+    }
+
+    /* ===== RESET & BASE ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 15px;
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      background: var(--bg-main);
+      color: var(--text-primary);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.6;
+      overflow-x: hidden;
+      transition: background-color var(--transition-smooth), color var(--transition-smooth);
+      opacity: 0;
+      animation: fadeIn 0.6s ease-out forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    /* ===== TYPOGRAPHY ===== */
+    h1, h2, h3, h4, h5, h6 {
+      margin: 0 0 12px;
+      font-weight: 600;
+      color: var(--text-primary);
+      line-height: 1.2;
+    }
+
+    h1 { font-size: 2rem; letter-spacing: -0.02em; }
+    h2 { font-size: 1.6rem; }
+    h3 { font-size: 1.25rem; }
+
+    p {
+      margin: 0 0 12px;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    @media (min-width: 768px) {
+      html { font-size: 15.5px; }
+      h1 { font-size: 2.3rem; }
+      h2 { font-size: 2rem; }
+      p { font-size: 1rem; }
+    }
+
+    @media (min-width: 1024px) {
+      html { font-size: 16px; }
+      h1 { font-size: 2.6rem; }
+      h2 { font-size: 2.2rem; }
+    }
+
+    /* ===== CONTAINER ===== */
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    section {
+      padding: 32px 0;
+    }
+
+    @media (min-width: 768px) {
+      section { padding: 56px 0; }
+    }
+
+    @media (min-width: 1024px) {
+      section { padding: 72px 0; }
+      .container { padding: 0 20px; }
+    }
+
+    /* ===== BUTTONS ===== */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 18px;
+      border-radius: 999px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all var(--transition-fast);
+      outline: none;
+    }
+
+    .btn--primary {
+      background: linear-gradient(135deg, var(--gold-primary), var(--gold-bright));
+      color: #0B0B0B;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .btn--primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(212, 175, 55, 0.3);
+    }
+
+    .btn--secondary {
+      background: rgba(17, 17, 17, 0.9);
+      color: var(--gold-bright);
+      border: 1px solid var(--border-subtle);
+    }
+
+    .btn--secondary:hover {
+      background: var(--bg-surface-hover);
+      border-color: var(--gold-bright);
+    }
+
+    .btn--lg {
+      padding: 12px 24px;
+      font-size: 1rem;
+    }
+
+    .btn--full-width {
+      width: 100%;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(11, 11, 11, 0.95);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border-subtle);
+      transition: all var(--transition-smooth);
+    }
+
+    :root[data-theme="light"] header {
+      background: rgba(255, 255, 255, 0.95);
+    }
+
+    .header-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform var(--transition-fast);
+    }
+
+    .logo:hover {
+      transform: translateY(-2px);
+    }
+
+    .logo-text {
+      font-weight: 800;
+      font-size: 18px;
+      color: var(--gold-bright);
+      letter-spacing: -0.5px;
+    }
+
+    .nav-menu {
+      display: none;
+      flex-direction: column;
+      position: fixed;
+      top: 60px;
+      left: 0;
+      right: 0;
+      background: rgba(11, 11, 11, 0.98);
+      backdrop-filter: blur(20px);
+      padding: 12px 16px 20px;
+      gap: 6px;
+      max-height: calc(100vh - 60px);
+      overflow-y: auto;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .nav-menu.active {
+      display: flex;
+    }
+
+    @media (min-width: 1024px) {
+      .nav-menu {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        background: transparent;
+        padding: 0;
+        border: none;
+        max-height: none;
+      }
+    }
+
+    .nav-link {
+      display: block;
+      padding: 10px 14px;
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.95rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all var(--transition-fast);
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: var(--gold-bright);
+      background: rgba(199, 154, 27, 0.1);
+    }
+
+    .mobile-menu-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+      border: none;
+      color: var(--text-primary);
+      font-size: 20px;
+      cursor: pointer;
+      padding: 6px;
+      transition: color var(--transition-fast);
+      margin-left: auto;
+    }
+
+    .mobile-menu-btn:hover {
+      color: var(--gold-bright);
+    }
+
+    @media (min-width: 1024px) {
+      .mobile-menu-btn { display: none; }
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .header-btn {
+      border: none;
+      background: transparent;
+      color: var(--text-primary);
+      cursor: pointer;
+      font-size: 16px;
+      padding: 6px 12px;
+      border-radius: 6px;
+      transition: all var(--transition-fast);
+    }
+
+    .header-btn:hover {
+      color: var(--gold-bright);
+      background: rgba(199, 154, 27, 0.1);
+    }
+
+    /* ===== MAIN CONTENT ===== */
+    main {
+      padding-top: 80px;
+      min-height: 100vh;
+    }
+
+    .page-section {
+      display: none;
+    }
+
+    .page-section.active {
+      display: block;
+      animation: fadeIn 0.4s ease-out;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 16px 40px;
+    }
+
+    .hero h1 {
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      max-width: 90%;
+      margin: 0 auto 24px;
+    }
+
+    @media (min-width: 768px) {
+      .hero {
+        padding: 72px 20px 52px;
+      }
+      .hero p {
+        max-width: 640px;
+      }
+    }
+
+    /* ===== GRID ===== */
+    .grid {
+      display: grid;
+      gap: 20px;
+    }
+
+    .grid-2 {
+      grid-template-columns: 1fr;
+    }
+
+    .grid-3 {
+      grid-template-columns: 1fr;
+    }
+
+    @media (min-width: 768px) {
+      .grid-2 { grid-template-columns: repeat(2, 1fr); }
+      .grid-3 { grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    }
+
+    /* ===== CARD ===== */
+    .card {
+      background: var(--bg-elevated);
+      border-radius: 12px;
+      border: 1px solid var(--border-subtle);
+      padding: 20px;
+      box-shadow: var(--shadow-soft);
+      transition: all var(--transition-fast);
+    }
+
+    .card:hover {
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+    }
+
+    @media (min-width: 768px) {
+      .card { padding: 24px; }
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: rgba(7, 7, 8, 0.96);
+      border-top: 1px solid var(--border-subtle);
+      padding: 24px 16px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    footer p {
+      font-size: 0.8rem;
+      margin: 0;
+    }
+
+    /* ===== LOADING ===== */
+    .loading {
+      text-align: center;
+      padding: 40px 20px;
+      color: var(--text-muted);
+    }
+
+    /* ===== ACCESSIBILITY ===== */
+    :focus-visible {
+      outline: 2px solid var(--gold-bright);
+      outline-offset: 2px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-container">
+    <div class="logo" id="logoHome">
+      <i class="fas fa-bolt" style="color: var(--gold-bright); font-size: 24px;"></i>
+      <span class="logo-text">QuickServe IT</span>
+    </div>
+
+    <!-- DESKTOP NAV -->
+    <nav class="nav-menu" id="navMenu">
+      <a class="nav-link" data-page="home" data-en="Home" data-hi="होम">Home</a>
+      <a class="nav-link" data-page="services" data-en="Services" data-hi="सेवाएँ">Services</a>
+      <a class="nav-link" data-page="pricing" data-en="Pricing" data-hi="मूल्य निर्धारण">Pricing</a>
+      <a class="nav-link" data-page="portfolio" data-en="Portfolio" data-hi="पोर्टफोलियो">Portfolio</a>
+      <a class="nav-link" data-page="about" data-en="About" data-hi="हमारे बारे में">About</a>
+      <a class="nav-link" data-page="blog" data-en="Blog" data-hi="ब्लॉग">Blog</a>
+      <a class="nav-link" data-page="faq" data-en="FAQ" data-hi="सामान्य प्रश्न">FAQ</a>
+    </nav>
+
+    <!-- HEADER ACTIONS -->
+    <div class="header-actions">
+      <button class="header-btn" id="themeToggle" title="Toggle theme">
+        <i class="fas fa-moon"></i>
+      </button>
+      <button class="header-btn" id="langSwitch" data-en="हिंदी" data-hi="English">हिंदी</button>
+      <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- MAIN CONTENT -->
+<main id="mainContent">
+  
+  <!-- HOME PAGE -->
+  <section class="page-section active" data-page="home">
+    <div class="container">
+      <div class="hero">
+        <h1 class="i18n" data-en="Professional Digital Services" data-hi="पेशेवर डिजिटल सेवाएँ">Professional Digital Services</h1>
+        <p class="i18n" data-en="Fast, accurate, and reliable services for schools, creators, and businesses" data-hi="स्कूलों, क्रिएटर्स और व्यवसायों के लिए तेज़, सटीक और विश्वसनीय सेवाएँ">Fast, accurate, and reliable services for schools, creators, and businesses</p>
+        <button class="btn btn--primary btn--lg" id="ctaButton" data-en="Get Started" data-hi="शुरुआत करें">Get Started</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES PAGE -->
+  <section class="page-section" data-page="services">
+    <div class="container">
+      <h1 class="i18n" data-en="Our Services" data-hi="हमारी सेवाएँ">Our Services</h1>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3 class="i18n" data-en="Typing & Documents" data-hi="टाइपिंग और दस्तावेज़">Typing & Documents</h3>
+          <p class="i18n" data-en="Professional typing, formatting, and document preparation" data-hi="पेशेवर टाइपिंग, फॉर्मेटिंग और दस्तावेज़ तैयारी">Professional typing, formatting, and document preparation</p>
+        </div>
+        <div class="card">
+          <h3 class="i18n" data-en="School Services" data-hi="स्कूल सेवाएँ">School Services</h3>
+          <p class="i18n" data-en="Timetables, notices, worksheets, and school documentation" data-hi="समय सारणी, नोटिस, कार्यपत्र और स्कूल दस्तावेज़">Timetables, notices, worksheets, and school documentation</p>
+        </div>
+        <div class="card">
+          <h3 class="i18n" data-en="Creator Services" data-hi="निर्माता सेवाएँ">Creator Services</h3>
+          <p class="i18n" data-en="Video editing, scriptwriting, and content optimization" data-hi="वीडियो संपादन, स्क्रिप्ट लेखन और सामग्री अनुकूलन">Video editing, scriptwriting, and content optimization</p>
+        </div>
+        <div class="card">
+          <h3 class="i18n" data-en="Custom Work" data-hi="कस्टम काम">Custom Work</h3>
+          <p class="i18n" data-en="Any digital project you need—let's discuss your requirements" data-hi="कोई भी डिजिटल प्रोजेक्ट जो आपको चाहिए—अपनी आवश्यकताओं पर चर्चा करें">Any digital project you need—let's discuss your requirements</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING PAGE -->
+  <section class="page-section" data-page="pricing">
+    <div class="container">
+      <h1 class="i18n" data-en="Transparent Pricing" data-hi="पारदर्शी मूल्य निर्धारण">Transparent Pricing</h1>
+      <div class="grid grid-3">
+        <div class="card">
+          <h3 class="i18n" data-en="Basic" data-hi="बेसिक">Basic</h3>
+          <p class="i18n" data-en="Starting at ₹500" data-hi="₹500 से शुरू">Starting at ₹500</p>
+          <button class="btn btn--secondary" id="pricingCta" data-en="Get Quote" data-hi="उद्धरण प्राप्त करें">Get Quote</button>
+        </div>
+        <div class="card">
+          <h3 class="i18n" data-en="Standard" data-hi="मानक">Standard</h3>
+          <p class="i18n" data-en="Starting at ₹1,500" data-hi="₹1,500 से शुरू">Starting at ₹1,500</p>
+          <button class="btn btn--primary" id="pricingCta2" data-en="Get Quote" data-hi="उद्धरण प्राप्त करें">Get Quote</button>
+        </div>
+        <div class="card">
+          <h3 class="i18n" data-en="Premium" data-hi="प्रीमियम">Premium</h3>
+          <p class="i18n" data-en="Custom pricing" data-hi="कस्टम मूल्य निर्धारण">Custom pricing</p>
+          <button class="btn btn--secondary" id="pricingCta3" data-en="Get Quote" data-hi="उद्धरण प्राप्त करें">Get Quote</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO PAGE -->
+  <section class="page-section" data-page="portfolio">
+    <div class="container">
+      <h1 class="i18n" data-en="Our Portfolio" data-hi="हमारा पोर्टफोलियो">Our Portfolio</h1>
+      <p class="i18n" data-en="500+ successful projects completed with 99% accuracy" data-hi="500+ सफल प्रोजेक्ट 99% सटीकता के साथ पूरे किए गए">500+ successful projects completed with 99% accuracy</p>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3 class="i18n" data-en="Video Editing" data-hi="वीडियो संपादन">Video Editing</h3>
+          <p class="i18n" data-en="Professional video projects for YouTube and social media" data-hi="YouTube और सोशल मीडिया के लिए पेशेवर वीडियो प्रोजेक्ट">Professional video projects for YouTube and social media</p>
+        </div>
+        <div class="card">
+          <h3 class="i18n" data-en="School Documents" data-hi="स्कूल दस्तावेज़">School Documents</h3>
+          <p class="i18n" data-en="Timetables, notices, and administrative documents" data-hi="समय सारणी, नोटिस और प्रशासनिक दस्तावेज़">Timetables, notices, and administrative documents</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT PAGE -->
+  <section class="page-section" data-page="about">
+    <div class="container">
+      <h1 class="i18n" data-en="About QuickServe IT" data-hi="QuickServe IT के बारे में">About QuickServe IT</h1>
+      <p class="i18n" data-en="We are a team of professionals dedicated to delivering high-quality digital services. Our mission is to help schools, creators, and businesses save time and focus on growth." data-hi="हम पेशेवरों की एक टीम हैं जो उच्च-गुणवत्ता वाली डिजिटल सेवाएँ प्रदान करने के लिए समर्पित हैं। हमारा मिशन स्कूलों, क्रिएटर्स और व्यवसायों को समय बचाने और विकास पर ध्यान केंद्रित करने में मदद करना है।">We are a team of professionals dedicated to delivering high-quality digital services. Our mission is to help schools, creators, and businesses save time and focus on growth.</p>
+    </div>
+  </section>
+
+  <!-- BLOG PAGE -->
+  <section class="page-section" data-page="blog">
+    <div class="container">
+      <h1 class="i18n" data-en="Blog & Tips" data-hi="ब्लॉग और सुझाव">Blog & Tips</h1>
+      <div class="grid">
+        <div class="card">
+          <h3 class="i18n" data-en="How to Improve Productivity" data-hi="उत्पादकता में सुधार कैसे करें">How to Improve Productivity</h3>
+          <p class="i18n" data-en="Tips for managing your workload effectively" data-hi="अपने काम का बोझ प्रभावी ढंग से प्रबंधित करने के सुझाव">Tips for managing your workload effectively</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ PAGE -->
+  <section class="page-section" data-page="faq">
+    <div class="container">
+      <h1 class="i18n" data-en="Frequently Asked Questions" data-hi="अक्सर पूछे जाने वाले प्रश्न">Frequently Asked Questions</h1>
+      <div class="grid">
+        <div class="card">
+          <h3 class="i18n" data-en="What is your turnaround time?" data-hi="आपका टर्नअराउंड समय क्या है?">What is your turnaround time?</h3>
+          <p class="i18n" data-en="Most projects are completed within 24-48 hours" data-hi="अधिकांश प्रोजेक्ट 24-48 घंटों में पूरे हो जाते हैं">Most projects are completed within 24-48 hours</p>
+        </div>
+        <div class="card">
+          <h3 class="i18n" data-en="What is your pricing?" data-hi="आपका मूल्य निर्धारण क्या है?">What is your pricing?</h3>
+          <p class="i18n" data-en="Pricing starts at ₹500 depending on project scope" data-hi="मूल्य निर्धारण प्रोजेक्ट के दायरे के आधार पर ₹500 से शुरू होता है">Pricing starts at ₹500 depending on project scope</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <p class="i18n" data-en="© 2025 QuickServe IT. All rights reserved." data-hi="© 2025 QuickServe IT. सर्वाधिकार सुरक्षित।">© 2025 QuickServe IT. All rights reserved.</p>
+</footer>
+
+<!-- JAVASCRIPT -->
+<script>
+(function() {
+  'use strict';
+
+  const CONFIG = {
+    whatsappNumber: '916388224877',
+    email: 'letsquickserveit@gmail.com',
+  };
+
+  let currentLang = 'en';
+  let currentPage = 'home';
+
+  // ===== THEME TOGGLE =====
+  function initThemeToggle() {
+    const themeToggle = document.getElementById('themeToggle');
+    const html = document.documentElement;
+    const savedTheme = localStorage.getItem('qs-theme') || 'dark';
+    
+    applyTheme(savedTheme);
+    
+    themeToggle.addEventListener('click', () => {
+      const current = html.getAttribute('data-theme') || 'dark';
+      const next = current === 'dark' ? 'light' : 'dark';
+      applyTheme(next);
+    });
+  }
+
+  function applyTheme(theme) {
+    const html = document.documentElement;
+    const themeToggle = document.getElementById('themeToggle');
+    const icon = themeToggle.querySelector('i');
+
+    html.setAttribute('data-theme', theme);
+    localStorage.setItem('qs-theme', theme);
+
+    if (icon) {
+      icon.className = theme === 'light' ? 'fas fa-sun' : 'fas fa-moon';
+    }
+  }
+
+  // ===== LANGUAGE TOGGLE =====
+  function initLanguageSwitch() {
+    const langSwitch = document.getElementById('langSwitch');
+    const savedLang = localStorage.getItem('qs-lang') || 'en';
+    
+    applyLanguage(savedLang);
+    
+    langSwitch.addEventListener('click', () => {
+      const next = currentLang === 'en' ? 'hi' : 'en';
+      applyLanguage(next);
+    });
+  }
+
+  function applyLanguage(lang) {
+    currentLang = lang;
+    const html = document.documentElement;
+    const langSwitch = document.getElementById('langSwitch');
+
+    html.setAttribute('data-lang', lang);
+    localStorage.setItem('qs-lang', lang);
+
+    document.querySelectorAll('[data-en]').forEach(el => {
+      const enText = el.getAttribute('data-en');
+      const hiText = el.getAttribute('data-hi');
+      const text = lang === 'hi' ? hiText : enText;
+
+      if (!text) return;
+
+      if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+        el.placeholder = text;
+      } else {
+        el.textContent = text;
+      }
+    });
+
+    langSwitch.textContent = lang === 'en' ? 'हिंदी' : 'English';
+  }
+
+  // ===== NAVIGATION =====
+  function initNavigation() {
+    const navLinks = document.querySelectorAll('[data-page]');
+    const navMenu = document.getElementById('navMenu');
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const page = link.getAttribute('data-page');
+        navigateTo(page);
+        navMenu.classList.remove('active');
+      });
+    });
+
+    mobileMenuBtn.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+
+    document.addEventListener('click', (e) => {
+      if (navMenu.classList.contains('active') &&
+          !navMenu.contains(e.target) &&
+          !mobileMenuBtn.contains(e.target)) {
+        navMenu.classList.remove('active');
+      }
+    });
+
+    // Logo home link
+    document.getElementById('logoHome').addEventListener('click', () => {
+      navigateTo('home');
+      navMenu.classList.remove('active');
+    });
+  }
+
+  function navigateTo(page) {
+    currentPage = page;
+    localStorage.setItem('qs-page', page);
+
+    document.querySelectorAll('.page-section').forEach(section => {
+      section.classList.remove('active');
+    });
+
+    document.querySelector(`[data-page="${page}"]`)?.classList.add('active');
+
+    // Update nav active state
+    document.querySelectorAll('[data-page]').forEach(link => {
+      link.classList.toggle('active', link.getAttribute('data-page') === page);
+    });
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  // ===== CTA BUTTONS =====
+  function initCTAButtons() {
+    const ctaButtons = document.querySelectorAll('#ctaButton, #pricingCta, #pricingCta2, #pricingCta3');
+    
+    ctaButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const message = currentLang === 'en'
+          ? 'Hello! I would like to inquire about your services. Can you please provide more information?'
+          : 'नमस्ते! मैं आपकी सेवाओं के बारे में पूछताछ करना चाहूंगा। क्या आप अधिक जानकारी प्रदान कर सकते हैं?';
+
+        const encodedMessage = encodeURIComponent(message);
+        const whatsappUrl = `https://wa.me/${CONFIG.whatsappNumber}?text=${encodedMessage}`;
+        window.open(whatsappUrl, '_blank');
+      });
+    });
+  }
+
+  // ===== INITIALIZATION =====
+  function init() {
+    initThemeToggle();
+    initLanguageSwitch();
+    initNavigation();
+    initCTAButtons();
+
+    // Restore last page
+    const savedPage = localStorage.getItem('qs-page') || 'home';
+    navigateTo(savedPage);
+
+    setTimeout(() => {
+      document.body.classList.add('loaded');
+    }, 100);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
+
+</body>
+</html>
