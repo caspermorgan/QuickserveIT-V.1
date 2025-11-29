@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Work - QuickServe IT Portfolio</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="header-container">
+            <a href="../index.html" class="logo">
+                <span class="logo-text">⚡ QuickServe IT</span>
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Portfolio</a></li>
+                    <li class="nav-item"><a href="../index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="langSwitch" class="btn btn--secondary btn--sm">हिंदी</button>
+                <button id="themeToggle" class="btn btn--secondary btn--sm">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== BREADCRUMB ===== -->
+    <section style="padding-top: 100px; padding-bottom: 20px;">
+        <div class="container">
+            <nav style="font-size: 14px; color: var(--text-muted);">
+                <a href="../index.html" style="color: var(--gold-primary);">Home</a> 
+                <span> / </span>
+                <a href="index.html" style="color: var(--gold-primary);">Portfolio</a> 
+                <span> / </span>
+                <span style="color: var(--text-primary);">Video Work</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- ===== PORTFOLIO NAVIGATION TABS ===== -->
+    <section style="padding: 40px 20px; background: rgba(199, 154, 27, 0.05);">
+        <div class="container">
+            <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 40px;">
+                <a href="index.html" class="btn btn--secondary" style="text-decoration: none;">
+                    All Portfolio
+                </a>
+                <a href="video-work.html" class="btn btn--primary" style="text-decoration: none;">
+                    Video Work
+                </a>
+                <a href="typing-samples.html" class="btn btn--secondary" style="text-decoration: none;">
+                    Typing Samples
+                </a>
+                <a href="school-documents.html" class="btn btn--secondary" style="text-decoration: none;">
+                    School Documents
+                </a>
+                <a href="before-after.html" class="btn btn--secondary" style="text-decoration: none;">
+                    Before & After
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section style="padding: 60px 20px; text-align: center;">
+        <div class="container">
+            <h1 style="font-size: 48px; color: var(--gold-bright); margin-bottom: 16px;">🎬 Video Work</h1>
+            <p style="font-size: 18px; color: var(--text-muted); max-width: 700px; margin: 0 auto;">
+                Professional video editing, content optimization, and YouTube-ready production. See our finest video editing projects.
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== VIDEO EXAMPLES ===== -->
+    <section style="padding: 60px 20px;">
+        <div class="container">
+            <h2 style="font-size: 32px; color: var(--gold-bright); margin-bottom: 32px;">Video Projects</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px; margin-bottom: 60px;">
+                <!-- Example 1 -->
+                <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; overflow: hidden;">
+                    <div style="background: rgba(244, 67, 54, 0.2); height: 200px; display: flex; align-items: center; justify-content: center; font-size: 64px;">
+                        ▶️
+                    </div>
+                    <div style="padding: 24px;">
+                        <h3 style="color: var(--text-primary); font-size: 20px; margin-bottom: 12px;">Educational Tutorial Series</h3>
+                        <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6; margin-bottom: 16px;">
+                            <strong>Type:</strong> Full course editing (15 videos, 45 minutes total)
+                        </p>
+                        <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6; margin-bottom: 16px;">
+                            <strong>What we did:</strong> Cuts, transitions, color grading, background music, intro/outro, captions, optimization for YouTube
+                        </p>
+                        <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6;">
+                            <strong>Result:</strong> Professional, engaging content that increased viewership by 150%
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Example 2 -->
+                <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; overflow: hidden;">
+                    <div style="background: rgba(76, 175, 80, 0.2); height: 200px; display: flex; align-items: center; justify-content: center; font-size: 64px;">
+                        ▶️
+                    </div>
+                    <div style="padding: 24px;">
+                        <h3 style="color: var(--text-primary); font-size: 20px; margin-bottom: 12px;">Product Review Video</h3>
+                        <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6; margin-bottom: 16px;">
+                            <strong>Type:</strong> Single video editing (12 minutes)
+                        </p>
+                        <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6; margin-bottom: 16px;">
+                            <strong>What we did:</strong> B-roll organization, music sync, effects, thumbnail-friendly scenes, pacing optimization
+                        </p>
+                        <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6;">
+                            <strong>Result:</strong> Video got 50k views, highest engagement rate yet
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Example 3 -->
+                <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; overflow: hidden;">
+                    <div style="background: rgba(33, 150, 243, 0.2); height: 200px; display: flex; align-items: center; justify-content: center; font-size: 64px;">
+                        ▶️
+                    </div>
+                    <div style="padding: 24px;">
+                        <h3 style="color: var(--text-primary); font-size: 20px; margin-bottom: 12px;">Shorts & Reels Repurposing</h3>
+                        <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6; margin-bottom: 16px;">
+                            <strong>Type:</strong> 1 long video → 8 Shorts
+                        </p>
+                        <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6; margin-bottom: 16px;">
+                            <strong>What we did:</strong> Extract key moments, vertical format optimization, fast-paced edits, captions, hooks
+                        </p>
+                        <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6;">
+                            <strong>Result:</strong> Combined 2M+ views across all formats
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Example 4 -->
+                <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; overflow: hidden;">
+                    <div style="background: rgba(156, 39, 176, 0.2); height: 200px; display: flex; align-items: center; justify-content: center; font-size: 64px;">
+                        ▶️
+                    </div>
+                    <div style="padding: 24px;">
+                        <h3 style="color: var(--text-primary); font-size: 20px; margin-bottom: 12px;">Raw Footage to Polish</h3>
+                        <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6; margin-bottom: 16px;">
+                            <strong>Type:</strong> Complete editing (25 minutes raw → 18 minutes polished)
+                        </p>
+                        <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6; margin-bottom: 16px;">
+                            <strong>What we did:</strong> Audio cleanup, noise removal, color correction, professional sound design
+                        </p>
+                        <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6;">
+                            <strong>Result:</strong> Made unpolished footage broadcast-quality
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Example 5 -->
+                <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; overflow: hidden;">
+                    <div style="background: rgba(255, 152, 0, 0.2); height: 200px; display: flex; align-items: center; justify-content: center; font-size: 64px;">
+                        ▶️
+                    </div>
+                    <div style="padding: 24px;">
+                        <h3 style="color: var(--text-primary); font-size: 20px; margin-bottom: 12px;">Podcast to Video</h3>
+                        <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6; margin-bottom: 16px;">
+                            <strong>Type:</strong> Audio → Video conversion (60 min podcast)
+                        </p>
+                        <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6; margin-bottom: 16px;">
+                            <strong>What we did:</strong> B-roll selection, captions, timeline sync, highlights, engagement boosters
+                        </p>
+                        <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6;">
+                            <strong>Result:</strong> Audio reached 5x more audience as video
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Example 6 -->
+                <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; overflow: hidden;">
+                    <div style="background: rgba(0, 188, 212, 0.2); height: 200px; display: flex; align-items: center; justify-content: center; font-size: 64px;">
+                        ▶️
+                    </div>
+                    <div style="padding: 24px;">
+                        <h3 style="color: var(--text-primary); font-size: 20px; margin-bottom: 12px;">Monthly Channel Support</h3>
+                        <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6; margin-bottom: 16px;">
+                            <strong>Type:</strong> Ongoing monthly package (4-8 videos/month)
+                        </p>
+                        <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6; margin-bottom: 16px;">
+                            <strong>What we do:</strong> All editing, optimization, consistency, quality control, quick turnaround
+                        </p>
+                        <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6;">
+                            <strong>Result:</strong> Channel growth 200%+ in 6 months
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Why Choose Us -->
+            <div style="background: rgba(199, 154, 27, 0.05); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; padding: 32px;">
+                <h3 style="color: var(--gold-bright); font-size: 24px; margin-bottom: 24px;">Why Choose Our Video Editing</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px;">
+                    <div>
+                        <h4 style="color: var(--text-primary); margin-bottom: 8px;">✓ YouTube Optimization</h4>
+                        <p style="color: var(--text-muted); font-size: 14px;">Videos are optimized for YouTube's algorithm and viewer engagement.</p>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--text-primary); margin-bottom: 8px;">✓ Fast Turnaround</h4>
+                        <p style="color: var(--text-muted); font-size: 14px;">Standard 5-7 days, faster with priority pricing.</p>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--text-primary); margin-bottom: 8px;">✓ Professional Quality</h4>
+                        <p style="color: var(--text-muted); font-size: 14px;">Broadcast-quality output suitable for any platform.</p>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--text-primary); margin-bottom: 8px;">✓ Creative Input</h4>
+                        <p style="color: var(--text-muted); font-size: 14px;">We suggest improvements and optimization ideas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA SECTION ===== -->
+    <section style="padding: 60px 20px; background: rgba(199, 154, 27, 0.05); text-align: center;">
+        <div class="container">
+            <h2 style="font-size: 36px; color: var(--gold-bright); margin-bottom: 16px;">Ready to Elevate Your Videos?</h2>
+            <p style="font-size: 16px; color: var(--text-muted); margin-bottom: 32px;">Start with one video or monthly package.</p>
+            <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                <a href="../index.html#contact" class="btn btn--primary btn--lg" style="text-decoration: none;">
+                    Get Quote
+                </a>
+                <a href="index.html" class="btn btn--secondary btn--lg" style="text-decoration: none;">
+                    View More Portfolio
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer style="background: rgba(17, 17, 17, 0.8); border-top: 1px solid rgba(199, 154, 27, 0.2); padding: 40px 20px; text-align: center; margin-top: 60px;">
+        <div class="container">
+            <p style="color: var(--text-muted); font-size: 14px;">© 2024 QuickServe IT. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../app.js"></script>
+</body>
+</html>
