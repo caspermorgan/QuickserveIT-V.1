@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal - QuickServe IT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">⚡ QuickServe IT</span>
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="legal.html" class="nav-link">Legal</a></li>
+                    <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="langSwitch" class="btn btn--secondary btn--sm">हिंदी</button>
+                <button id="themeToggle" class="btn btn--secondary btn--sm">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== BREADCRUMB ===== -->
+    <section style="padding-top: 100px; padding-bottom: 20px;">
+        <div class="container">
+            <nav style="font-size: 14px; color: var(--text-muted);">
+                <a href="index.html" style="color: var(--gold-primary);">Home</a> 
+                <span> / </span>
+                <span style="color: var(--text-primary);">Legal</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section style="padding: 60px 20px; text-align: center;">
+        <div class="container">
+            <h1 style="font-size: 48px; color: var(--gold-bright); margin-bottom: 16px;">⚖️ Legal & Privacy</h1>
+            <p style="font-size: 18px; color: var(--text-muted); max-width: 700px; margin: 0 auto;">
+                Terms of Service, Privacy Policy, and legal information. Your rights and our responsibilities.
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== LEGAL TABS ===== -->
+    <section style="padding: 40px 20px; background: rgba(199, 154, 27, 0.05);">
+        <div class="container">
+            <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 40px;">
+                <button onclick="toggleTab('tos')" style="background: rgba(199, 154, 27, 0.2); border: 1px solid rgba(199, 154, 27, 0.3); color: var(--gold-bright); padding: 10px 20px; border-radius: 8px; cursor: pointer; font-weight: 600;">
+                    Terms of Service
+                </button>
+                <button onclick="toggleTab('privacy')" style="background: transparent; border: 1px solid rgba(199, 154, 27, 0.2); color: var(--text-primary); padding: 10px 20px; border-radius: 8px; cursor: pointer; font-weight: 600;">
+                    Privacy Policy
+                </button>
+                <button onclick="toggleTab('disclaimer')" style="background: transparent; border: 1px solid rgba(199, 154, 27, 0.2); color: var(--text-primary); padding: 10px 20px; border-radius: 8px; cursor: pointer; font-weight: 600;">
+                    Disclaimer
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTENT SECTION ===== -->
+    <section style="padding: 60px 20px;">
+        <div class="container" style="max-width: 900px;">
+            <!-- Terms of Service -->
+            <div id="tos" style="display: block;">
+                <h2 style="font-size: 32px; color: var(--gold-bright); margin-bottom: 24px;">Terms of Service</h2>
+                
+                <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; padding: 28px;">
+                    <h3 style="color: var(--gold-bright); margin-bottom: 16px;">1. Service Agreement</h3>
+                    <p style="color: var(--text-muted); font-size: 14px; line-height: 1.8; margin-bottom: 20px;">
+                        By using QuickServe IT services, you agree to these terms. We provide professional digital services including typing, video editing, document formatting, and school documentation.
+                    </p>
+
+                    <h3 style="color: var(--gold-bright); margin-bottom: 16px; margin-top: 20px;">2. Payment Terms</h3>
+                    <p style="color: var(--text-muted); font-size: 14px; line-height: 1.8; margin-bottom: 20px;">
+                        Standard payment: 50% advance, 50% on delivery. For monthly packages, payment is due after project completion. We accept UPI, Bank Transfer, WhatsApp Pay, and other digital methods.
+                    </p>
+
+                    <h3 style="color: var(--gold-bright); margin-bottom: 16px; margin-top: 20px;">3. Quality Guarantee</h3>
+                    <p style="color: var(--text-muted); font-size: 14px; line-height: 1.8; margin-bottom: 20px;">
+                        We guarantee 99% accuracy on all projects. Unlimited free revisions until 100% satisfaction. If quality standards aren't met, we provide full refund or redo.
+                    </p>
+
+                    <h3 style="color: var(--gold-bright); margin-bottom: 16px; margin-top: 20px;">4. Confidentiality</h3>
+                    <p style="color: var(--text-muted); font-size: 14px; line-height: 1.8; margin-bottom: 20px;">
+                        All client information and work are kept strictly confidential. We sign NDAs when required. Your data security is our top priority.
+                    </p>
+
+                    <h3 style="color: var(--gold-bright); margin-bottom: 16px; margin-top: 20px;">5. Limitations</h3>
+                    <p style="color: var(--text-muted); font-size: 14px; line-height: 1.8; margin-bottom: 20px;">
+                        We reserve the right to refuse work that is illegal, unethical, or violates these terms. QuickServe IT is not liable for client delays, technical failures, or third-party issues.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Privacy Policy -->
+            <div id="privacy" style="display: none;">
+                <h2 style="font-size: 32px; color: var(--gold-bright); margin-bottom: 24px;">Privacy Policy</h2>
+                
+                <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; padding: 28px;">
+                    <h3 style="color: var(--gold-bright); margin-bottom: 16px;">1. Data Collection</h3>
+                    <p style="color: var(--text-muted); font-size: 14px; line-height: 1.8; margin-bottom: 20px;">
+                        We collect minimal information: name, email, phone, and project details. This is used only for service delivery and communication.
+                    </p>
+
+                    <h3 style="color: var(--gold-bright); margin-bottom: 16px; margin-top: 20px;">2. Data Usage</h3>
+                    <p style="color: var(--text-muted); font-size: 14px; line-height: 1.8; margin-bottom: 20px;">
+                        Your data is used to: Process payments, deliver services, send project updates, and provide customer support. We never sell your data to third parties.
+                    </p>
+
+                    <h3 style="color: var(--gold-bright); margin-bottom: 16px; margin-top: 20px;">3. Data Security</h3>
+                    <p style="color: var(--text-muted); font-size: 14px; line-height: 1.8; margin-bottom: 20px;">
+                        Client data is encrypted and stored securely. Only authorized team members can access project files. We follow industry-standard security protocols.
+                    </p>
+
+                    <h3 style="color: var(--gold-bright); margin-bottom: 16px; margin-top: 20px;">4. Cookies</h3>
+                    <p style="color: var(--text-muted); font-size: 14px; line-height: 1.8; margin-bottom: 20px;">
+                        Our website uses cookies for analytics and user experience. You can disable cookies in your browser settings if preferred.
+                    </p>
+
+                    <h3 style="color: var(--gold-bright); margin-bottom: 16px; margin-top: 20px;">5. Your Rights</h3>
+                    <p style="color: var(--text-muted); font-size: 14px; line-height: 1.8; margin-bottom: 20px;">
+                        You have the right to access, update, or delete your personal data. Contact us anytime for data requests or privacy concerns.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Disclaimer -->
+            <div id="disclaimer" style="display: none;">
+                <h2 style="font-size: 32px; color: var(--gold-bright); margin-bottom: 24px;">Disclaimer</h2>
+                
+                <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; padding: 28px;">
+                    <h3 style="color: var(--gold-bright); margin-bottom: 16px;">Service Availability</h3>
+                    <p style="color: var(--text-muted); font-size: 14px; line-height: 1.8; margin-bottom: 20px;">
+                        QuickServe IT provides services on an "as is" basis. We are not responsible for service interruptions, technical failures, or force majeure events.
+                    </p>
+
+                    <h3 style="color: var(--gold-bright); margin-bottom: 16px; margin-top: 20px;">Liability Limitation</h3>
+                    <p style="color: var(--text-muted); font-size: 14px; line-height: 1.8; margin-bottom: 20px;">
+                        In no event shall QuickServe IT be liable for indirect, incidental, or consequential damages. Our liability is limited to the amount paid for the service.
+                    </p>
+
+                    <h3 style="color: var(--gold-bright); margin-bottom: 16px; margin-top: 20px;">User Responsibility</h3>
+                    <p style="color: var(--text-muted); font-size: 14px; line-height: 1.8; margin-bottom: 20px;">
+                        Users are responsible for: Providing accurate project information, ensuring they own all content, complying with laws, and maintaining account security.
+                    </p>
+
+                    <h3 style="color: var(--gold-bright); margin-bottom: 16px; margin-top: 20px;">Third-Party Links</h3>
+                    <p style="color: var(--text-muted); font-size: 14px; line-height: 1.8; margin-bottom: 20px;">
+                        Our website may contain links to third-party sites. We are not responsible for their content, accuracy, or policies. Use at your own discretion.
+                    </p>
+
+                    <h3 style="color: var(--gold-bright); margin-bottom: 16px; margin-top: 20px;">Content Accuracy</h3>
+                    <p style="color: var(--text-muted); font-size: 14px; line-height: 1.8; margin-bottom: 20px;">
+                        While we strive for accuracy, we don't guarantee that all information is error-free. Users should verify important information independently.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section style="padding: 60px 20px; background: rgba(199, 154, 27, 0.05); text-align: center;">
+        <div class="container">
+            <h2 style="font-size: 36px; color: var(--gold-bright); margin-bottom: 16px;">Questions About Our Policies?</h2>
+            <p style="font-size: 16px; color: var(--text-muted); margin-bottom: 32px;">Contact us anytime. We're happy to clarify any legal or privacy concerns.</p>
+            <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                <a href="index.html#contact" class="btn btn--primary btn--lg" style="text-decoration: none;">
+                    Contact Us
+                </a>
+                <a href="index.html" class="btn btn--secondary btn--lg" style="text-decoration: none;">
+                    Back to Home
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer style="background: rgba(17, 17, 17, 0.8); border-top: 1px solid rgba(199, 154, 27, 0.2); padding: 40px 20px; text-align: center; margin-top: 60px;">
+        <div class="container">
+            <p style="color: var(--text-muted); font-size: 14px;">© 2024 QuickServe IT. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleTab(tab) {
+            document.getElementById('tos').style.display = tab === 'tos' ? 'block' : 'none';
+            document.getElementById('privacy').style.display = tab === 'privacy' ? 'block' : 'none';
+            document.getElementById('disclaimer').style.display = tab === 'disclaimer' ? 'block' : 'none';
+        }
+    </script>
+
+    <script src="app.js"></script>
+</body>
+</html>
