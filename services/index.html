@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Services - QuickServe IT</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="header-container">
+            <a href="../index.html" class="logo">
+                <span class="logo-text">⚡ QuickServe IT</span>
+            </a>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="../index.html#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="../index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button id="langSwitch" class="btn btn--secondary btn--sm">हिंदी</button>
+                <button id="themeToggle" class="btn btn--secondary btn--sm">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== BREADCRUMB ===== -->
+    <section style="padding-top: 100px; padding-bottom: 20px;">
+        <div class="container">
+            <nav style="font-size: 14px; color: var(--text-muted);">
+                <a href="../index.html" style="color: var(--gold-primary);">Home</a> 
+                <span> / </span>
+                <span style="color: var(--text-primary);">All Services</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section style="padding: 60px 20px; text-align: center;">
+        <div class="container">
+            <h1 style="font-size: 48px; color: var(--gold-bright); margin-bottom: 16px;">
+                <span data-en="Our Professional Services">Our Professional Services</span>
+                <span data-hi="हमारी पेशेवर सेवाएं" style="display: none;"></span>
+            </h1>
+            <p style="font-size: 18px; color: var(--text-muted); max-width: 600px; margin: 0 auto;">
+                <span data-en="Choose the service that matches your needs. Click to explore detailed packages, pricing, and examples for each service category.">Choose the service that matches your needs. Click to explore detailed packages, pricing, and examples for each service category.</span>
+                <span data-hi="अपनी आवश्यकताओं के अनुसार सेवा चुनें। विवरण, मूल्य निर्धारण और प्रत्येक सेवा श्रेणी के उदाहरणों का पता लगाने के लिए क्लिक करें।" style="display: none;"></span>
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES GRID ===== -->
+    <section style="padding: 60px 20px;">
+        <div class="container">
+            <div class="services-grid">
+                <!-- Service 1: Typing & Document -->
+                <a href="typing-document.html" style="text-decoration: none;">
+                    <div class="service-card">
+                        <div class="service-icon">📝</div>
+                        <h3 data-en="Typing & Document Services" data-hi="टाइपिंग और दस्तावेज़ सेवाएं">Typing & Document Services</h3>
+                        <p data-en="Professional typing, formatting, PDF conversion, and document enhancement with 99% accuracy. English and Hindi support." data-hi="पेशेवर टाइपिंग, फॉर्मेटिंग, PDF रूपांतरण, और 99% सटीकता के साथ दस्तावेज़ सुधार। अंग्रेजी और हिंदी समर्थन।">Professional typing, formatting, PDF conversion, and document enhancement with 99% accuracy. English and Hindi support.</p>
+                        <div style="margin-top: 16px; color: var(--gold-bright); font-weight: 600;">
+                            <span data-en="View Details →" data-hi="विवरण देखें →">View Details →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Service 2: School & Institute -->
+                <a href="school-institute.html" style="text-decoration: none;">
+                    <div class="service-card">
+                        <div class="service-icon">🎓</div>
+                        <h3 data-en="School & Institute Services" data-hi="स्कूल और संस्थान सेवाएं">School & Institute Services</h3>
+                        <p data-en="Timetables, attendance sheets, exam papers, certificates, and complete school data management. Tailored for educational institutions." data-hi="समय सारणी, उपस्थिति पत्रक, परीक्षा पत्र, प्रमाण पत्र, और संपूर्ण स्कूल डेटा प्रबंधन। शैक्षणिक संस्थानों के लिए अनुकूलित।">Timetables, attendance sheets, exam papers, certificates, and complete school data management. Tailored for educational institutions.</p>
+                        <div style="margin-top: 16px; color: var(--gold-bright); font-weight: 600;">
+                            <span data-en="View Details →" data-hi="विवरण देखें →">View Details →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Service 3: Creator Services -->
+                <a href="creator-services.html" style="text-decoration: none;">
+                    <div class="service-card">
+                        <div class="service-icon">🎬</div>
+                        <h3 data-en="Creator Services" data-hi="निर्माता सेवाएं">Creator Services</h3>
+                        <p data-en="Professional video editing, audio cleanup, script writing, content repurposing for social media. Optimized for YouTube and educational creators." data-hi="पेशेवर वीडियो संपादन, ऑडियो सफाई, स्क्रिप्ट लेखन, सोशल मीडिया के लिए सामग्री पुनर्विचार। YouTube और शैक्षणिक निर्माताओं के लिए अनुकूलित।">Professional video editing, audio cleanup, script writing, content repurposing for social media. Optimized for YouTube and educational creators.</p>
+                        <div style="margin-top: 16px; color: var(--gold-bright); font-weight: 600;">
+                            <span data-en="View Details →" data-hi="विवरण देखें →">View Details →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Service 4: Custom Work -->
+                <a href="custom-work.html" style="text-decoration: none;">
+                    <div class="service-card">
+                        <div class="service-icon">✨</div>
+                        <h3 data-en="Custom & Bulk Projects" data-hi="कस्टम और बल्क प्रोजेक्ट">Custom & Bulk Projects</h3>
+                        <p data-en="Specialized projects, bulk orders, mixed services, and unique digital solutions. Perfect for schools, creators, and businesses with unique needs." data-hi="विशेष प्रकल्प, बल्क ऑर्डर, मिश्रित सेवाएं, और अद्वितीय डिजिटल समाधान। स्कूलों, निर्माताओं और व्यवसायों के लिए आदर्श।">Specialized projects, bulk orders, mixed services, and unique digital solutions. Perfect for schools, creators, and businesses with unique needs.</p>
+                        <div style="margin-top: 16px; color: var(--gold-bright); font-weight: 600;">
+                            <span data-en="View Details →" data-hi="विवरण देखें →">View Details →</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROCESS SECTION ===== -->
+    <section style="padding: 60px 20px; background: rgba(199, 154, 27, 0.05); border-top: 1px solid rgba(199, 154, 27, 0.2); border-bottom: 1px solid rgba(199, 154, 27, 0.2);">
+        <div class="container">
+            <h2 style="font-size: 36px; color: var(--gold-bright); text-align: center; margin-bottom: 48px;">
+                <span data-en="Our 5-Step Process" data-hi="हमारी 5-चरण प्रक्रिया">Our 5-Step Process</span>
+            </h2>
+            <div class="steps-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px;">
+                <div style="text-align: center;">
+                    <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--gold-primary), var(--gold-bright)); color: #0B0B0B; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 28px; font-weight: 800; margin: 0 auto 16px;">1</div>
+                    <h4 style="color: var(--text-primary); margin-bottom: 8px;"><span data-en="Submit" data-hi="जमा करें">Submit</span></h4>
+                    <p style="color: var(--text-muted); font-size: 14px;" data-en="Share files and requirements via WhatsApp, email, or form." data-hi="WhatsApp, ईमेल, या फॉर्म के माध्यम से फाइलें और आवश्यकताएं साझा करें।">Share files and requirements via WhatsApp, email, or form.</p>
+                </div>
+                <div style="text-align: center;">
+                    <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--gold-primary), var(--gold-bright)); color: #0B0B0B; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 28px; font-weight: 800; margin: 0 auto 16px;">2</div>
+                    <h4 style="color: var(--text-primary); margin-bottom: 8px;"><span data-en="Analyze" data-hi="विश्लेषण करें">Analyze</span></h4>
+                    <p style="color: var(--text-muted); font-size: 14px;" data-en="We review and provide transparent pricing and timeline." data-hi="हम समीक्षा करते हैं और पारदर्शी मूल्य निर्धारण और समयसीमा प्रदान करते हैं।">We review and provide transparent pricing and timeline.</p>
+                </div>
+                <div style="text-align: center;">
+                    <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--gold-primary), var(--gold-bright)); color: #0B0B0B; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 28px; font-weight: 800; margin: 0 auto 16px;">3</div>
+                    <h4 style="color: var(--text-primary); margin-bottom: 8px;"><span data-en="Work" data-hi="काम करें">Work</span></h4>
+                    <p style="color: var(--text-muted); font-size: 14px;" data-en="Our team delivers with quality checkpoints and accuracy." data-hi="हमारी टीम गुणवत्ता जांच और सटीकता के साथ देती है।">Our team delivers with quality checkpoints and accuracy.</p>
+                </div>
+                <div style="text-align: center;">
+                    <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--gold-primary), var(--gold-bright)); color: #0B0B0B; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 28px; font-weight: 800; margin: 0 auto 16px;">4</div>
+                    <h4 style="color: var(--text-primary); margin-bottom: 8px;"><span data-en="Review" data-hi="समीक्षा करें">Review</span></h4>
+                    <p style="color: var(--text-muted); font-size: 14px;" data-en="You review output. We make revisions if needed." data-hi="आप आउटपुट की समीक्षा करते हैं। यदि आवश्यक हो तो हम संशोधन करते हैं।">You review output. We make revisions if needed.</p>
+                </div>
+                <div style="text-align: center;">
+                    <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--gold-primary), var(--gold-bright)); color: #0B0B0B; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 28px; font-weight: 800; margin: 0 auto 16px;">5</div>
+                    <h4 style="color: var(--text-primary); margin-bottom: 8px;"><span data-en="Deliver" data-hi="डिलीवर करें">Deliver</span></h4>
+                    <p style="color: var(--text-muted); font-size: 14px;" data-en="After payment approval, we deliver in your format." data-hi="भुगतान मंजूरी के बाद, हम आपके प्रारूप में डिलीवर करते हैं।">After payment approval, we deliver in your format.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA SECTION ===== -->
+    <section style="padding: 60px 20px;">
+        <div class="container" style="text-align: center;">
+            <h2 style="font-size: 36px; color: var(--gold-bright); margin-bottom: 16px;">
+                <span data-en="Ready to Get Started?" data-hi="शुरू करने के लिए तैयार हैं?">Ready to Get Started?</span>
+            </h2>
+            <p style="font-size: 18px; color: var(--text-muted); margin-bottom: 32px;">
+                <span data-en="Choose your service above or contact us for a custom quote." data-hi="उपरोक्त अपनी सेवा चुनें या कस्टम उद्धरण के लिए हमसे संपर्क करें।">Choose your service above or contact us for a custom quote.</span>
+            </p>
+            <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                <button onclick="window.location.href='../index.html#contact'" class="btn btn--primary btn--lg">
+                    <span data-en="Contact Us" data-hi="हमसे संपर्क करें">Contact Us</span>
+                </button>
+                <button onclick="window.open('https://wa.me/916388224877?text=Hello%20QuickServe%20IT%2C%20I%20am%20interested%20in%20your%20services.', '_blank')" class="btn btn--secondary btn--lg">
+                    <i class="fab fa-whatsapp"></i>
+                    <span data-en="WhatsApp" data-hi="व्हाट्सएप" style="margin-left: 8px;">WhatsApp</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer style="background: rgba(17, 17, 17, 0.8); border-top: 1px solid rgba(199, 154, 27, 0.2); padding: 40px 20px; text-align: center; margin-top: 60px;">
+        <div class="container">
+            <p style="color: var(--text-muted); font-size: 14px;">
+                <span data-en="© 2024 QuickServe IT. All rights reserved." data-hi="© 2024 QuickServe IT. सर्वाधिकार सुरक्षित।">© 2024 QuickServe IT. All rights reserved.</span>
+            </p>
+            <p style="color: var(--text-muted); font-size: 12px; margin-top: 8px;">
+                <span data-en="Serving Rural India with Metro Quality" data-hi="ग्रामीण भारत को मेट्रो गुणवत्ता के साथ सेवा देना">Serving Rural India with Metro Quality</span>
+            </p>
+        </div>
+    </footer>
+
+    <script src="../app.js"></script>
+</body>
+</html>
