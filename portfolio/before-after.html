@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before & After - QuickServe IT Portfolio</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="header-container">
+            <a href="../index.html" class="logo">
+                <span class="logo-text">⚡ QuickServe IT</span>
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Portfolio</a></li>
+                    <li class="nav-item"><a href="../index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="langSwitch" class="btn btn--secondary btn--sm">हिंदी</button>
+                <button id="themeToggle" class="btn btn--secondary btn--sm">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== BREADCRUMB ===== -->
+    <section style="padding-top: 100px; padding-bottom: 20px;">
+        <div class="container">
+            <nav style="font-size: 14px; color: var(--text-muted);">
+                <a href="../index.html" style="color: var(--gold-primary);">Home</a> 
+                <span> / </span>
+                <a href="index.html" style="color: var(--gold-primary);">Portfolio</a> 
+                <span> / </span>
+                <span style="color: var(--text-primary);">Before & After</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- ===== PORTFOLIO NAVIGATION TABS ===== -->
+    <section style="padding: 40px 20px; background: rgba(199, 154, 27, 0.05);">
+        <div class="container">
+            <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 40px;">
+                <a href="index.html" class="btn btn--secondary" style="text-decoration: none;">All Portfolio</a>
+                <a href="video-work.html" class="btn btn--secondary" style="text-decoration: none;">Video Work</a>
+                <a href="typing-samples.html" class="btn btn--secondary" style="text-decoration: none;">Typing Samples</a>
+                <a href="school-documents.html" class="btn btn--secondary" style="text-decoration: none;">School Documents</a>
+                <a href="before-after.html" class="btn btn--primary" style="text-decoration: none;">Before & After</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section style="padding: 60px 20px; text-align: center;">
+        <div class="container">
+            <h1 style="font-size: 48px; color: var(--gold-bright); margin-bottom: 16px;">✨ Before & After</h1>
+            <p style="font-size: 18px; color: var(--text-muted); max-width: 700px; margin: 0 auto;">
+                See the transformation. Poorly formatted documents become professional, polished output ready for submission and presentation.
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== TRANSFORMATIONS ===== -->
+    <section style="padding: 60px 20px;">
+        <div class="container">
+            <h2 style="font-size: 32px; color: var(--gold-bright); margin-bottom: 48px; text-align: center;">Quality Transformations</h2>
+            
+            <div style="display: grid; gap: 48px;">
+                <!-- Transformation 1 -->
+                <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; overflow: hidden;">
+                    <div style="padding: 32px;">
+                        <h3 style="color: var(--text-primary); font-size: 24px; margin-bottom: 24px; text-align: center;">📄 Handwritten to Digital</h3>
+                        
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+                            <!-- Before -->
+                            <div>
+                                <h4 style="color: #FF5252; font-size: 16px; margin-bottom: 12px;">❌ BEFORE</h4>
+                                <div style="background: rgba(11, 11, 11, 0.8); border: 2px solid #FF5252; border-radius: 8px; padding: 16px; height: 200px; display: flex; align-items: center; justify-content: center; text-align: center;">
+                                    <div>
+                                        <p style="color: var(--text-muted); font-size: 12px; margin: 0;">• Handwritten notes</p>
+                                        <p style="color: var(--text-muted); font-size: 12px; margin: 4px 0;">• Unclear formatting</p>
+                                        <p style="color: var(--text-muted); font-size: 12px; margin: 4px 0;">• Hard to read</p>
+                                        <p style="color: var(--text-muted); font-size: 12px; margin: 4px 0;">• Not professional</p>
+                                        <p style="color: var(--text-muted); font-size: 12px; margin: 4px 0;">• Difficult to share</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- After -->
+                            <div>
+                                <h4 style="color: #4CAF50; font-size: 16px; margin-bottom: 12px;">✓ AFTER</h4>
+                                <div style="background: rgba(11, 11, 11, 0.8); border: 2px solid #4CAF50; border-radius: 8px; padding: 16px; height: 200px; display: flex; align-items: center; justify-content: center; text-align: center;">
+                                    <div>
+                                        <p style="color: var(--gold-bright); font-size: 12px; margin: 0;">✓ Professional typing</p>
+                                        <p style="color: var(--gold-bright); font-size: 12px; margin: 4px 0;">✓ Perfect formatting</p>
+                                        <p style="color: var(--gold-bright); font-size: 12px; margin: 4px 0;">✓ Crystal clear</p>
+                                        <p style="color: var(--gold-bright); font-size: 12px; margin: 4px 0;">✓ Ready for submission</p>
+                                        <p style="color: var(--gold-bright); font-size: 12px; margin: 4px 0;">✓ Easy to share</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p style="color: var(--text-muted); font-size: 13px; margin-top: 16px; text-align: center;">
+                            <strong>Result:</strong> Handwritten document converted to professional digital format with 99% accuracy
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Transformation 2 -->
+                <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; overflow: hidden;">
+                    <div style="padding: 32px;">
+                        <h3 style="color: var(--text-primary); font-size: 24px; margin-bottom: 24px; text-align: center;">🎥 Raw Video to Polished</h3>
+                        
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+                            <!-- Before -->
+                            <div>
+                                <h4 style="color: #FF5252; font-size: 16px; margin-bottom: 12px;">❌ BEFORE</h4>
+                                <div style="background: rgba(11, 11, 11, 0.8); border: 2px solid #FF5252; border-radius: 8px; padding: 16px; height: 200px; display: flex; align-items: center; justify-content: center; text-align: center;">
+                                    <div>
+                                        <p style="color: var(--text-muted); font-size: 12px; margin: 0;">• Shaky footage</p>
+                                        <p style="color: var(--text-muted); font-size: 12px; margin: 4px 0;">• Bad audio quality</p>
+                                        <p style="color: var(--text-muted); font-size: 12px; margin: 4px 0;">• No color correction</p>
+                                        <p style="color: var(--text-muted); font-size: 12px; margin: 4px 0;">• Awkward pacing</p>
+                                        <p style="color: var(--text-muted); font-size: 12px; margin: 4px 0;">• Not YouTube ready</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- After -->
+                            <div>
+                                <h4 style="color: #4CAF50; font-size: 16px; margin-bottom: 12px;">✓ AFTER</h4>
+                                <div style="background: rgba(11, 11, 11, 0.8); border: 2px solid #4CAF50; border-radius: 8px; padding: 16px; height: 200px; display: flex; align-items: center; justify-content: center; text-align: center;">
+                                    <div>
+                                        <p style="color: var(--gold-bright); font-size: 12px; margin: 0;">✓ Smooth transitions</p>
+                                        <p style="color: var(--gold-bright); font-size: 12px; margin: 4px 0;">✓ Crystal clear audio</p>
+                                        <p style="color: var(--gold-bright); font-size: 12px; margin: 4px 0;">✓ Color graded</p>
+                                        <p style="color: var(--gold-bright); font-size: 12px; margin: 4px 0;">✓ Perfect pacing</p>
+                                        <p style="color: var(--gold-bright); font-size: 12px; margin: 4px 0;">✓ YouTube optimized</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p style="color: var(--text-muted); font-size: 13px; margin-top: 16px; text-align: center;">
+                            <strong>Result:</strong> 25-minute raw footage transformed into 18-minute professional YouTube video
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Transformation 3 -->
+                <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; overflow: hidden;">
+                    <div style="padding: 32px;">
+                        <h3 style="color: var(--text-primary); font-size: 24px; margin-bottom: 24px; text-align: center;">📋 Messy Data to Clean Report</h3>
+                        
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+                            <!-- Before -->
+                            <div>
+                                <h4 style="color: #FF5252; font-size: 16px; margin-bottom: 12px;">❌ BEFORE</h4>
+                                <div style="background: rgba(11, 11, 11, 0.8); border: 2px solid #FF5252; border-radius: 8px; padding: 16px; height: 200px; display: flex; align-items: center; justify-content: center; text-align: center;">
+                                    <div>
+                                        <p style="color: var(--text-muted); font-size: 12px; margin: 0;">• Inconsistent data</p>
+                                        <p style="color: var(--text-muted); font-size: 12px; margin: 4px 0;">• No structure</p>
+                                        <p style="color: var(--text-muted); font-size: 12px; margin: 4px 0;">• Spelling errors</p>
+                                        <p style="color: var(--text-muted); font-size: 12px; margin: 4px 0;">• Missing data</p>
+                                        <p style="color: var(--text-muted); font-size: 12px; margin: 4px 0;">• Not professional</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- After -->
+                            <div>
+                                <h4 style="color: #4CAF50; font-size: 16px; margin-bottom: 12px;">✓ AFTER</h4>
+                                <div style="background: rgba(11, 11, 11, 0.8); border: 2px solid #4CAF50; border-radius: 8px; padding: 16px; height: 200px; display: flex; align-items: center; justify-content: center; text-align: center;">
+                                    <div>
+                                        <p style="color: var(--gold-bright); font-size: 12px; margin: 0;">✓ Consistent formatting</p>
+                                        <p style="color: var(--gold-bright); font-size: 12px; margin: 4px 0;">✓ Professional structure</p>
+                                        <p style="color: var(--gold-bright); font-size: 12px; margin: 4px 0;">✓ Error-free</p>
+                                        <p style="color: var(--gold-bright); font-size: 12px; margin: 4px 0;">✓ Complete & verified</p>
+                                        <p style="color: var(--gold-bright); font-size: 12px; margin: 4px 0;">✓ Ready for executives</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p style="color: var(--text-muted); font-size: 13px; margin-top: 16px; text-align: center;">
+                            <strong>Result:</strong> Messy data organized into professional, presentation-ready report
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Transformation 4 -->
+                <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; overflow: hidden;">
+                    <div style="padding: 32px;">
+                        <h3 style="color: var(--text-primary); font-size: 24px; margin-bottom: 24px; text-align: center;">📸 Poor Quality to Professional</h3>
+                        
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+                            <!-- Before -->
+                            <div>
+                                <h4 style="color: #FF5252; font-size: 16px; margin-bottom: 12px;">❌ BEFORE</h4>
+                                <div style="background: rgba(11, 11, 11, 0.8); border: 2px solid #FF5252; border-radius: 8px; padding: 16px; height: 200px; display: flex; align-items: center; justify-content: center; text-align: center;">
+                                    <div>
+                                        <p style="color: var(--text-muted); font-size: 12px; margin: 0;">• Poor scan quality</p>
+                                        <p style="color: var(--text-muted); font-size: 12px; margin: 4px 0;">• Skewed angles</p>
+                                        <p style="color: var(--text-muted); font-size: 12px; margin: 4px 0;">• Shadows & blur</p>
+                                        <p style="color: var(--text-muted); font-size: 12px; margin: 4px 0;">• Not submittable</p>
+                                        <p style="color: var(--text-muted); font-size: 12px; margin: 4px 0;">• Unprofessional</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- After -->
+                            <div>
+                                <h4 style="color: #4CAF50; font-size: 16px; margin-bottom: 12px;">✓ AFTER</h4>
+                                <div style="background: rgba(11, 11, 11, 0.8); border: 2px solid #4CAF50; border-radius: 8px; padding: 16px; height: 200px; display: flex; align-items: center; justify-content: center; text-align: center;">
+                                    <div>
+                                        <p style="color: var(--gold-bright); font-size: 12px; margin: 0;">✓ Crystal clear</p>
+                                        <p style="color: var(--gold-bright); font-size: 12px; margin: 4px 0;">✓ Perfect alignment</p>
+                                        <p style="color: var(--gold-bright); font-size: 12px; margin: 4px 0;">✓ Enhanced clarity</p>
+                                        <p style="color: var(--gold-bright); font-size: 12px; margin: 4px 0;">✓ Submission ready</p>
+                                        <p style="color: var(--gold-bright); font-size: 12px; margin: 4px 0;">✓ Professional output</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p style="color: var(--text-muted); font-size: 13px; margin-top: 16px; text-align: center;">
+                            <strong>Result:</strong> Poor quality scan converted to high-resolution, professional document
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Impact Stats -->
+            <div style="background: rgba(199, 154, 27, 0.05); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; padding: 32px; margin-top: 60px;">
+                <h3 style="color: var(--gold-bright); font-size: 24px; margin-bottom: 24px; text-align: center;">Impact of Professional Quality</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px;">
+                    <div style="text-align: center;">
+                        <p style="color: var(--gold-bright); font-size: 32px; font-weight: bold; margin-bottom: 8px;">95%</p>
+                        <p style="color: var(--text-muted); font-size: 14px;">Quality improvement on average</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <p style="color: var(--gold-bright); font-size: 32px; font-weight: bold; margin-bottom: 8px;">100%</p>
+                        <p style="color: var(--text-muted); font-size: 14px;">Acceptance rate on first submission</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <p style="color: var(--gold-bright); font-size: 32px; font-weight: bold; margin-bottom: 8px;">50%</p>
+                        <p style="color: var(--text-muted); font-size: 14px;">Time saved by using our services</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <p style="color: var(--gold-bright); font-size: 32px; font-weight: bold; margin-bottom: 8px;">0</p>
+                        <p style="color: var(--text-muted); font-size: 14px;">Errors in final output</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA SECTION ===== -->
+    <section style="padding: 60px 20px; background: rgba(199, 154, 27, 0.05); text-align: center;">
+        <div class="container">
+            <h2 style="font-size: 36px; color: var(--gold-bright); margin-bottom: 16px;">Ready for Your Transformation?</h2>
+            <p style="font-size: 16px; color: var(--text-muted); margin-bottom: 32px;">Let us turn your rough work into polished, professional output.</p>
+            <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                <a href="../index.html#contact" class="btn btn--primary btn--lg" style="text-decoration: none;">
+                    Start Your Project
+                </a>
+                <a href="index.html" class="btn btn--secondary btn--lg" style="text-decoration: none;">
+                    View Full Portfolio
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer style="background: rgba(17, 17, 17, 0.8); border-top: 1px solid rgba(199, 154, 27, 0.2); padding: 40px 20px; text-align: center; margin-top: 60px;">
+        <div class="container">
+            <p style="color: var(--text-muted); font-size: 14px;">© 2024 QuickServe IT. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../app.js"></script>
+</body>
+</html>
