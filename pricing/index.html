@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Overview - QuickServe IT</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="header-container">
+            <a href="../index.html" class="logo">
+                <span class="logo-text">⚡ QuickServe IT</span>
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="../services/index.html" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Pricing</a></li>
+                    <li class="nav-item"><a href="../index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="langSwitch" class="btn btn--secondary btn--sm">हिंदी</button>
+                <button id="themeToggle" class="btn btn--secondary btn--sm">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== BREADCRUMB ===== -->
+    <section style="padding-top: 100px; padding-bottom: 20px;">
+        <div class="container">
+            <nav style="font-size: 14px; color: var(--text-muted);">
+                <a href="../index.html" style="color: var(--gold-primary);">Home</a> 
+                <span> / </span>
+                <a href="index.html" style="color: var(--gold-primary);">Pricing</a> 
+                <span> / </span>
+                <span style="color: var(--text-primary);">Pricing Overview</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section style="padding: 60px 20px; text-align: center;">
+        <div class="container">
+            <h1 style="font-size: 48px; color: var(--gold-bright); margin-bottom: 16px;">💰 Transparent Pricing</h1>
+            <p style="font-size: 18px; color: var(--text-muted); max-width: 700px; margin: 0 auto;">
+                No hidden fees. No surprises. Just honest, professional pricing for all your digital needs. 50% advance, 50% on delivery.
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== PRICING NAVIGATION TABS ===== -->
+    <section style="padding: 40px 20px; background: rgba(199, 154, 27, 0.05);">
+        <div class="container">
+            <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 40px;">
+                <a href="index.html" class="btn btn--primary" style="text-decoration: none;">
+                    Pricing Overview
+                </a>
+                <a href="service-rates.html" class="btn btn--secondary" style="text-decoration: none;">
+                    Service Rates
+                </a>
+                <a href="bulk-deals.html" class="btn btn--secondary" style="text-decoration: none;">
+                    Bulk & Deals
+                </a>
+                <a href="custom-quote.html" class="btn btn--secondary" style="text-decoration: none;">
+                    Get Custom Quote
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <section style="padding: 60px 20px;">
+        <div class="container">
+            <h2 style="font-size: 36px; color: var(--gold-bright); margin-bottom: 32px; text-align: center;">Why Our Pricing is Fair & Transparent</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-bottom: 60px;">
+                <div style="background: linear-gradient(135deg, rgba(199, 154, 27, 0.15), rgba(212, 175, 55, 0.08)); border: 1px solid rgba(199, 154, 27, 0.3); border-radius: 12px; padding: 28px;">
+                    <h3 style="color: var(--gold-bright); font-size: 22px; margin-bottom: 12px;">✓ No Hidden Charges</h3>
+                    <p style="color: var(--text-muted); line-height: 1.6;">What you see is what you pay. No surprise fees, no extra charges after project completion.</p>
+                </div>
+                <div style="background: linear-gradient(135deg, rgba(199, 154, 27, 0.15), rgba(212, 175, 55, 0.08)); border: 1px solid rgba(199, 154, 27, 0.3); border-radius: 12px; padding: 28px;">
+                    <h3 style="color: var(--gold-bright); font-size: 22px; margin-bottom: 12px;">✓ Clear Payment Terms</h3>
+                    <p style="color: var(--text-muted); line-height: 1.6;">50% advance payment to start, 50% on delivery. Simple two-step process, no confusion.</p>
+                </div>
+                <div style="background: linear-gradient(135deg, rgba(199, 154, 27, 0.15), rgba(212, 175, 55, 0.08)); border: 1px solid rgba(199, 154, 27, 0.3); border-radius: 12px; padding: 28px;">
+                    <h3 style="color: var(--gold-bright); font-size: 22px; margin-bottom: 12px;">✓ Bulk Discounts</h3>
+                    <p style="color: var(--text-muted); line-height: 1.6;">Order more, pay less. Get 10-20% discounts on projects over 5000 words or custom packages.</p>
+                </div>
+                <div style="background: linear-gradient(135deg, rgba(199, 154, 27, 0.15), rgba(212, 175, 55, 0.08)); border: 1px solid rgba(199, 154, 27, 0.3); border-radius: 12px; padding: 28px;">
+                    <h3 style="color: var(--gold-bright); font-size: 22px; margin-bottom: 12px;">✓ Free Revisions</h3>
+                    <p style="color: var(--text-muted); line-height: 1.6;">Unlimited revisions until you're satisfied. No extra charge for changes and improvements.</p>
+                </div>
+                <div style="background: linear-gradient(135deg, rgba(199, 154, 27, 0.15), rgba(212, 175, 55, 0.08)); border: 1px solid rgba(199, 154, 27, 0.3); border-radius: 12px; padding: 28px;">
+                    <h3 style="color: var(--gold-bright); font-size: 22px; margin-bottom: 12px;">✓ Quick Quotes</h3>
+                    <p style="color: var(--text-muted); line-height: 1.6;">Share your project details, get a transparent quote in 24 hours. No obligation to proceed.</p>
+                </div>
+                <div style="background: linear-gradient(135deg, rgba(199, 154, 27, 0.15), rgba(212, 175, 55, 0.08)); border: 1px solid rgba(199, 154, 27, 0.3); border-radius: 12px; padding: 28px;">
+                    <h3 style="color: var(--gold-bright); font-size: 22px; margin-bottom: 12px;">✓ Monthly Packages</h3>
+                    <p style="color: var(--text-muted); line-height: 1.6;">Unlimited work within package scope. For schools and creators with ongoing needs.</p>
+                </div>
+            </div>
+
+            <!-- ===== PRICING TIERS OVERVIEW ===== -->
+            <h2 style="font-size: 32px; color: var(--gold-bright); margin-bottom: 32px; text-align: center;">Our Service Pricing Structure</h2>
+            
+            <div style="background: rgba(17, 17, 17, 0.6); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; padding: 32px; margin-bottom: 40px;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px;">
+                    <!-- Typing -->
+                    <div style="border-right: 1px solid rgba(199, 154, 27, 0.2); padding-right: 24px;">
+                        <h4 style="color: var(--gold-bright); font-size: 18px; margin-bottom: 16px;">📝 Typing</h4>
+                        <p style="color: var(--text-muted); font-size: 14px; margin: 0 0 12px 0;"><strong>₹2-3</strong> per word</p>
+                        <p style="color: var(--text-muted); font-size: 12px; line-height: 1.6;">English & Hindi typing with 99% accuracy. Minimum 500 words.</p>
+                    </div>
+
+                    <!-- Formatting -->
+                    <div style="border-right: 1px solid rgba(199, 154, 27, 0.2); padding-right: 24px;">
+                        <h4 style="color: var(--gold-bright); font-size: 18px; margin-bottom: 16px;">✨ Formatting</h4>
+                        <p style="color: var(--text-muted); font-size: 14px; margin: 0 0 12px 0;"><strong>₹500-1000</strong> per document</p>
+                        <p style="color: var(--text-muted); font-size: 12px; line-height: 1.6;">Professional formatting up to 20 pages. Includes headers, footers, tables.</p>
+                    </div>
+
+                    <!-- PDF & Conversion -->
+                    <div style="border-right: 1px solid rgba(199, 154, 27, 0.2); padding-right: 24px;">
+                        <h4 style="color: var(--gold-bright); font-size: 18px; margin-bottom: 16px;">📄 PDF Conversion</h4>
+                        <p style="color: var(--text-muted); font-size: 14px; margin: 0 0 12px 0;"><strong>₹100-300</strong> per page</p>
+                        <p style="color: var(--text-muted); font-size: 12px; line-height: 1.6;">Image to PDF, PDF cleanup, format conversion all formats.</p>
+                    </div>
+
+                    <!-- Video Editing -->
+                    <div style="border-right: 1px solid rgba(199, 154, 27, 0.2); padding-right: 24px;">
+                        <h4 style="color: var(--gold-bright); font-size: 18px; margin-bottom: 16px;">🎬 Video Editing</h4>
+                        <p style="color: var(--text-muted); font-size: 14px; margin: 0 0 12px 0;"><strong>₹500-2000</strong> per minute</p>
+                        <p style="color: var(--text-muted); font-size: 12px; line-height: 1.6;">Professional editing, cuts, transitions, effects included.</p>
+                    </div>
+
+                    <!-- School Services -->
+                    <div style="border-right: 1px solid rgba(199, 154, 27, 0.2); padding-right: 24px;">
+                        <h4 style="color: var(--gold-bright); font-size: 18px; margin-bottom: 16px;">🎓 School Services</h4>
+                        <p style="color: var(--text-muted); font-size: 14px; margin: 0 0 12px 0;"><strong>₹300-1000</strong> per item</p>
+                        <p style="color: var(--text-muted); font-size: 12px; line-height: 1.6;">Timetables, attendance sheets, exam papers, certificates.</p>
+                    </div>
+
+                    <!-- Monthly Packages -->
+                    <div>
+                        <h4 style="color: var(--gold-bright); font-size: 18px; margin-bottom: 16px;">📆 Monthly Packages</h4>
+                        <p style="color: var(--text-muted); font-size: 14px; margin: 0 0 12px 0;"><strong>₹5,000-40,000</strong>/month</p>
+                        <p style="color: var(--text-muted); font-size: 12px; line-height: 1.6;">Unlimited work for schools, creators, businesses.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== PAYMENT PROCESS ===== -->
+            <h2 style="font-size: 32px; color: var(--gold-bright); margin-bottom: 32px; text-align: center;">How Payment Works</h2>
+            
+            <div style="background: rgba(199, 154, 27, 0.05); border: 1px solid rgba(199, 154, 27, 0.2); border-radius: 12px; padding: 32px;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px;">
+                    <div style="text-align: center;">
+                        <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--gold-primary), var(--gold-bright)); color: #0B0B0B; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 28px; font-weight: 800; margin: 0 auto 16px;">1</div>
+                        <h4 style="color: var(--text-primary); margin-bottom: 8px;">Send Details</h4>
+                        <p style="color: var(--text-muted); font-size: 14px;">Share your project via WhatsApp, email, or contact form.</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--gold-primary), var(--gold-bright)); color: #0B0B0B; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 28px; font-weight: 800; margin: 0 auto 16px;">2</div>
+                        <h4 style="color: var(--text-primary); margin-bottom: 8px;">Get Quote</h4>
+                        <p style="color: var(--text-muted); font-size: 14px;">Transparent quote in 24 hours with no obligation.</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--gold-primary), var(--gold-bright)); color: #0B0B0B; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 28px; font-weight: 800; margin: 0 auto 16px;">3</div>
+                        <h4 style="color: var(--text-primary); margin-bottom: 8px;">50% Advance</h4>
+                        <p style="color: var(--text-muted); font-size: 14px;">Pay 50% to start. We begin work immediately.</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--gold-primary), var(--gold-bright)); color: #0B0B0B; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 28px; font-weight: 800; margin: 0 auto 16px;">4</div>
+                        <h4 style="color: var(--text-primary); margin-bottom: 8px;">Work & Review</h4>
+                        <p style="color: var(--text-muted); font-size: 14px;">We deliver work. You review and request revisions if needed.</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--gold-primary), var(--gold-bright)); color: #0B0B0B; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 28px; font-weight: 800; margin: 0 auto 16px;">5</div>
+                        <h4 style="color: var(--text-primary); margin-bottom: 8px;">50% Final</h4>
+                        <p style="color: var(--text-muted); font-size: 14px;">Pay final 50%. We deliver in your desired format.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA SECTION ===== -->
+    <section style="padding: 60px 20px; background: rgba(199, 154, 27, 0.05); text-align: center;">
+        <div class="container">
+            <h2 style="font-size: 36px; color: var(--gold-bright); margin-bottom: 16px;">Ready to Get Started?</h2>
+            <p style="font-size: 16px; color: var(--text-muted); margin-bottom: 32px;">Choose a service or get a custom quote for your specific needs.</p>
+            <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                <a href="service-rates.html" class="btn btn--primary btn--lg" style="text-decoration: none;">
+                    View Service Rates
+                </a>
+                <a href="custom-quote.html" class="btn btn--secondary btn--lg" style="text-decoration: none;">
+                    Get Custom Quote
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer style="background: rgba(17, 17, 17, 0.8); border-top: 1px solid rgba(199, 154, 27, 0.2); padding: 40px 20px; text-align: center; margin-top: 60px;">
+        <div class="container">
+            <p style="color: var(--text-muted); font-size: 14px;">© 2024 QuickServe IT. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../app.js"></script>
+</body>
+</html>
