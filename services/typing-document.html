@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing & Document Services - QuickServe IT</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="header-container">
+            <a href="../index.html" class="logo">
+                <span class="logo-text">⚡ QuickServe IT</span>
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="../index.html#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="../index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="langSwitch" class="btn btn--secondary btn--sm">हिंदी</button>
+                <button id="themeToggle" class="btn btn--secondary btn--sm">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== BREADCRUMB ===== -->
+    <section style="padding-top: 100px; padding-bottom: 20px;">
+        <div class="container">
+            <nav style="font-size: 14px; color: var(--text-muted);">
+                <a href="../index.html" style="color: var(--gold-primary);">Home</a> 
+                <span> / </span>
+                <a href="index.html" style="color: var(--gold-primary);">Services</a> 
+                <span> / </span>
+                <span style="color: var(--text-primary);">Typing & Document</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section style="padding: 60px 20px; text-align: center;">
+        <div class="container">
+            <h1 style="font-size: 48px; color: var(--gold-bright); margin-bottom: 16px;">📝 Typing & Document Services</h1>
+            <p style="font-size: 18px; color: var(--text-muted); max-width: 700px; margin: 0 auto;">
+                Professional typing, formatting, PDF conversion, and document enhancement with 99% accuracy. English and Hindi support.
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <section style="padding: 60px 20px;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
+                <!-- LEFT: Service Details -->
+                <div>
+                    <h2 style="font-size: 32px; color: var(--gold-bright); margin-bottom: 24px;">What We Offer</h2>
+                    
+                    <div style="background: rgba(199, 154, 27, 0.1); border-left: 4px solid var(--gold-bright); padding: 20px; margin-bottom: 24px; border-radius: 8px;">
+                        <h3 style="color: var(--text-primary); margin-bottom: 12px;">Professional Typing</h3>
+                        <ul style="color: var(--text-muted); line-height: 1.8; list-style: none; padding: 0;">
+                            <li>✓ English and Hindi typing at 99% accuracy</li>
+                            <li>✓ Proper formatting and spacing</li>
+                            <li>✓ Technical and academic documents</li>
+                            <li>✓ Quick turnaround time</li>
+                        </ul>
+                    </div>
+
+                    <div style="background: rgba(199, 154, 27, 0.1); border-left: 4px solid var(--gold-bright); padding: 20px; margin-bottom: 24px; border-radius: 8px;">
+                        <h3 style="color: var(--text-primary); margin-bottom: 12px;">Document Formatting</h3>
+                        <ul style="color: var(--text-muted); line-height: 1.8; list-style: none; padding: 0;">
+                            <li>✓ Professional layout and design</li>
+                            <li>✓ Header, footer, and page numbering</li>
+                            <li>✓ Table creation and formatting</li>
+                            <li>✓ Bullet points and bullet lists</li>
+                        </ul>
+                    </div>
+
+                    <div style="background: rgba(199, 154, 27, 0.1); border-left: 4px solid var(--gold-bright); padding: 20px; margin-bottom: 24px; border-radius: 8px;">
+                        <h3 style="color: var(--text-primary); margin-bottom: 12px;">PDF & Format Conversion</h3>
+                        <ul style="color: var(--text-muted); line-height: 1.8; list-style: none; padding: 0;">
+                            <li>✓ Image to Word/PDF conversion</li>
+                            <li>✓ PDF cleanup and enhancement</li>
+                            <li>✓ Scanned document OCR</li>
+                            <li>✓ Multi-format conversions</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- RIGHT: Pricing & CTA -->
+                <div>
+                    <div style="background: linear-gradient(135deg, rgba(199, 154, 27, 0.15), rgba(212, 175, 55, 0.08)); border: 2px solid rgba(199, 154, 27, 0.4); border-radius: 16px; padding: 32px; position: sticky; top: 100px;">
+                        <h3 style="color: var(--gold-bright); font-size: 28px; margin-bottom: 24px;">Service Pricing</h3>
+                        
+                        <div style="background: rgba(11, 11, 11, 0.5); padding: 16px; border-radius: 8px; margin-bottom: 20px;">
+                            <h4 style="color: var(--text-primary); margin-bottom: 8px; font-size: 16px;">Professional Typing</h4>
+                            <p style="color: var(--gold-bright); font-size: 20px; font-weight: bold; margin: 0;">₹2-3 per word</p>
+                            <p style="color: var(--text-muted); font-size: 12px; margin: 8px 0 0 0;">Minimum 500 words</p>
+                        </div>
+
+                        <div style="background: rgba(11, 11, 11, 0.5); padding: 16px; border-radius: 8px; margin-bottom: 20px;">
+                            <h4 style="color: var(--text-primary); margin-bottom: 8px; font-size: 16px;">Document Formatting</h4>
+                            <p style="color: var(--gold-bright); font-size: 20px; font-weight: bold; margin: 0;">₹500-1000</p>
+                            <p style="color: var(--text-muted); font-size: 12px; margin: 8px 0 0 0;">Per document (up to 20 pages)</p>
+                        </div>
+
+                        <div style="background: rgba(11, 11, 11, 0.5); padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+                            <h4 style="color: var(--text-primary); margin-bottom: 8px; font-size: 16px;">PDF Conversion</h4>
+                            <p style="color: var(--gold-bright); font-size: 20px; font-weight: bold; margin: 0;">₹100-300</p>
+                            <p style="color: var(--text-muted); font-size: 12px; margin: 8px 0 0 0;">Per page / document</p>
+                        </div>
+
+                        <p style="color: var(--text-muted); font-size: 13px; margin-bottom: 24px; line-height: 1.6;">
+                            <strong>Payment:</strong> 50% advance, 50% before delivery. No hidden charges.
+                        </p>
+
+                        <button onclick="window.open('https://wa.me/916388224877?text=Hello%20QuickServe%20IT%2C%20I%20am%20interested%20in%20Typing%20and%20Document%20services.', '_blank')" class="btn btn--primary" style="width: 100%; margin-bottom: 12px;">
+                            <i class="fab fa-whatsapp"></i> Get Quote on WhatsApp
+                        </button>
+                        <button onclick="window.location.href='../index.html#contact'" class="btn btn--secondary" style="width: 100%;">
+                            Contact Us
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== WHAT'S INCLUDED ===== -->
+    <section style="padding: 60px 20px; background: rgba(199, 154, 27, 0.05);">
+        <div class="container">
+            <h2 style="font-size: 36px; color: var(--gold-bright); text-align: center; margin-bottom: 48px;">What's Included in Every Project</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px;">
+                <div style="background: rgba(17, 17, 17, 0.6); padding: 24px; border-radius: 12px; border: 1px solid rgba(199, 154, 27, 0.2);">
+                    <h4 style="color: var(--gold-bright); margin-bottom: 12px; font-size: 18px;">✓ Accuracy Check</h4>
+                    <p style="color: var(--text-muted); font-size: 14px;">Every document is checked twice for errors, typos, and formatting issues.</p>
+                </div>
+                <div style="background: rgba(17, 17, 17, 0.6); padding: 24px; border-radius: 12px; border: 1px solid rgba(199, 154, 27, 0.2);">
+                    <h4 style="color: var(--gold-bright); margin-bottom: 12px; font-size: 18px;">✓ Professional Output</h4>
+                    <p style="color: var(--text-muted); font-size: 14px;">Clean, well-formatted documents ready for submission or publication.</p>
+                </div>
+                <div style="background: rgba(17, 17, 17, 0.6); padding: 24px; border-radius: 12px; border: 1px solid rgba(199, 154, 27, 0.2);">
+                    <h4 style="color: var(--gold-bright); margin-bottom: 12px; font-size: 18px;">✓ Fast Delivery</h4>
+                    <p style="color: var(--text-muted); font-size: 14px;">Quick turnaround without sacrificing quality. Urgent projects available.</p>
+                </div>
+                <div style="background: rgba(17, 17, 17, 0.6); padding: 24px; border-radius: 12px; border: 1px solid rgba(199, 154, 27, 0.2);">
+                    <h4 style="color: var(--gold-bright); margin-bottom: 12px; font-size: 18px;">✓ Revisions</h4>
+                    <p style="color: var(--text-muted); font-size: 14px;">Free revisions until you're completely satisfied with the result.</p>
+                </div>
+                <div style="background: rgba(17, 17, 17, 0.6); padding: 24px; border-radius: 12px; border: 1px solid rgba(199, 154, 27, 0.2);">
+                    <h4 style="color: var(--gold-bright); margin-bottom: 12px; font-size: 18px;">✓ Bilingual Support</h4>
+                    <p style="color: var(--text-muted); font-size: 14px;">English and Hindi typing with proper grammar and formatting.</p>
+                </div>
+                <div style="background: rgba(17, 17, 17, 0.6); padding: 24px; border-radius: 12px; border: 1px solid rgba(199, 154, 27, 0.2);">
+                    <h4 style="color: var(--gold-bright); margin-bottom: 12px; font-size: 18px;">✓ Data Privacy</h4>
+                    <p style="color: var(--text-muted); font-size: 14px;">Your documents are confidential. We maintain strict privacy standards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIAL ===== -->
+    <section style="padding: 60px 20px;">
+        <div class="container">
+            <div style="max-width: 700px; margin: 0 auto; background: linear-gradient(135deg, rgba(199, 154, 27, 0.1), rgba(212, 175, 55, 0.05)); border: 1px solid rgba(199, 154, 27, 0.3); border-radius: 16px; padding: 32px; text-align: center;">
+                <p style="font-size: 18px; color: var(--text-muted); font-style: italic; margin-bottom: 20px; line-height: 1.8;">
+                    "QuickServe IT transformed how we handle our school's typing and document work. The 99% accuracy and professional formatting has saved us hours every month. Highly recommended!"
+                </p>
+                <p style="color: var(--gold-bright); font-weight: 600; margin: 0;">
+                    — School Principal, Varanasi
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA SECTION ===== -->
+    <section style="padding: 60px 20px; background: rgba(199, 154, 27, 0.05); text-align: center;">
+        <div class="container">
+            <h2 style="font-size: 36px; color: var(--gold-bright); margin-bottom: 16px;">Ready to Get Your Documents Typed?</h2>
+            <p style="font-size: 16px; color: var(--text-muted); margin-bottom: 32px;">Start with a free quote. Just send us your requirements.</p>
+            <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                <button onclick="window.location.href='../index.html#contact'" class="btn btn--primary btn--lg">
+                    Get Free Quote
+                </button>
+                <button onclick="window.location.href='index.html'" class="btn btn--secondary btn--lg">
+                    ← Back to Services
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer style="background: rgba(17, 17, 17, 0.8); border-top: 1px solid rgba(199, 154, 27, 0.2); padding: 40px 20px; text-align: center; margin-top: 60px;">
+        <div class="container">
+            <p style="color: var(--text-muted); font-size: 14px;">© 2024 QuickServe IT. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../app.js"></script>
+</body>
+</html>
